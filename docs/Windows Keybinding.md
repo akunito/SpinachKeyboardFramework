@@ -3,9 +3,13 @@
 # CapsLock to send CTRL + WIN
 Install AutoHotKeys v2
 
-save a script with the content:
+save a script with the content: 
 ```cs
-; The keyboard hook must be installed.
+; this is just an example
+; full script located on https://github.com/akunito/SpinachKeyboardFramework/tree/main/Windows/AutoHotKey
+
+
+; The keyboard hook mustbe installed.
 InstallKeybdHook
 
 SendSuppressedKeyUp(key) {
@@ -43,11 +47,3 @@ CapsLock & Tab::
 Is another tool that we can use. Less powerfull for keybinding than AutoHotkey
 Notes:
 Microsoft APP
-Config the shortcuts as in the pic
-#### Keyboard Manager
-PowerToys will not recognize the previous mapping when setting up a shortcut,
-but work around setting the Keys that are sent, will work.
-
-ie: (Move to left desktop)
-CTRL + WIN + Q         -->     CTRL + WIN + LEFT
-(aka CapsLock + Q)
