@@ -54,7 +54,7 @@ Project contains:
 
 - Scripts
   - You might find that some shortcuts are pointing to scripts that are not included on this project.
-  - I will upload my system scripts to another project that will be linked here. 
+  - You can find these scripts here https://github.com/akunito/myScripts/tree/main/MACOS 
 
 TODO:
 - Map CapsLock as Hyper (ctrl+alt+win) at VIA level
