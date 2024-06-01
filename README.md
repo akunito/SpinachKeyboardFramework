@@ -48,7 +48,11 @@ Project contains:
     - Or another longer term fix would be to map Caps Lock on your VIA or QMK to behive as CTRL+ALT+WIN
       - But this will require to readjust the Karabiner and AutoHotKeys project.
       - I will probably do this in the future.
-     
+
+- Scripts
+  - You might find that some shortcuts are pointing to scripts that are not included on this project.
+  - I will upload my system scripts to another project that will be linked here. 
+
 TODO:
 - Map CapsLock as Hyper (ctrl+alt+win) at VIA level
 - Make Karabiner to recognize this new change
