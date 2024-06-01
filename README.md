@@ -15,14 +15,14 @@ Project contains:
       - Set some basic rules for Yabai. You can modify your config from this one.
       - To config these files, you can either (make backup of your yabai files if you already had them)
           - Copy them to your /.config/yabai
-          - or create link with ln -sa /SpinachKeyboardFramework/MacOS/yabai ~/.config
+          - or create link with ln -sf /SpinachKeyboardFramework/MacOS/yabai ~/.config
        
   - skhd | config files
       - Set some shortcuts that call Yabai functions
       - This is complementary to Karabiner, and it will be replaced totally by Karabiner when all the functions will be integrated there.
       - To config these files, you can either (make backup of your skhd files if you already had them)
           - Copy them to your /.config/skhd
-          - or create link with ln -sa /SpinachKeyboardFramework/MacOS/skhd ~/.config
+          - or create link with ln -sf /SpinachKeyboardFramework/MacOS/skhd ~/.config
          
 - AutoHotKeys v2 for Win11
     - Install AutoHotKeys
