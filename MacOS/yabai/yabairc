@@ -1,0 +1,70 @@
+#!/bin/bash
+
+# ============================================================== Required for Scripting
+# https://github.com/koekeishiya/yabai/wiki/Installing-yabai-(latest-release)#configure-scripting-addition
+# for this to work you must configure sudo such that
+# it will be able to run the command without password
+
+yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
+sudo yabai --load-sa
+
+
+
+# ============================================================== General Layout
+# default layout (can be bsp, stack or float)
+yabai -m config layout bsp
+# Override default layout for the monitor RGB-27QHDS to be float
+yabai -m config --space 7 layout float
+
+# new window spawns to the right if vertical split, or bottom if horizontal split
+yabai -m config window_placement second_child
+
+# ============================================================== Rules
+# disable specific apps
+# can add the app name or the bundle id
+# to find bundle ids you can use:
+# find /Applications -maxdepth 2 -name "*.app" -print0 | while IFS= read -r -d '' app; do osascript -e "id of app \"$(basename "$app" .app)\"" 2>/dev/null; done
+yabai -m rule --add app="^System Settings$" manage=off
+yabai -m rule --add app="^Calculator$" manage=off
+yabai -m rule --add app="^Karabiner-Elements$" manage=off
+yabai -m rule --add app="^Karabiner-EventViewer$" manage=off
+yabai -m rule --add app="^QuickTime Player$" manage=off
+yabai -m rule --add app="^Activity Monitor$" manage=off
+yabai -m rule --add app="^Vivaldi Settings$" manage=off
+yabai -m rule --add app="^Select Color$" manage=off
+yabai -m rule --add app="^Bitwarden$" manage=off
+yabai -m rule --add app="^com.realvnc.vncviewer$" --float
+yabai -m rule --add app="^com.realvnc.vncviewer$" manage=off
+yabai -m rule --add app="^VNC Viewer$" --float
+yabai -m rule --add app="^VNC Viewer$" manage=off
+
+# ============================================================== Decoration
+# padding set to 12px
+yabai -m config top_padding 12
+yabai -m config bottom_padding 12
+yabai -m config left_padding 12
+yabai -m config right_padding 12
+yabai -m config window_gap 12
+
+# window opacity (default: off) # disable SIP required
+yabai -m config window_opacity on
+yabai -m config active_window_opacity 1.0
+yabai -m config normal_window_opacity 0.9
+
+# ============================================================== Mouse settings
+# set focus follows mouse mode (default: off, options: off, autoraise, autofocus)
+yabai -m config focus_follows_mouse autofocus
+# center mouse on window with focus
+yabai -m config mouse_follows_focus on
+
+# modifier for clicking and dragging with mouse
+yabai -m config mouse_modifier alt
+# set modifier + left-click drag to move window
+yabai -m config mouse_action1 move
+# set modifier + right-click drag to resize window
+yabai -m config mouse_action2 resize
+
+# when window is dropped in center of another window, swap them (on edges it will split it)
+yabai -m mouse_drop_action swap
+
+
