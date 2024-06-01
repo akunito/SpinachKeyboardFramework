@@ -1,6 +1,9 @@
 Documentation under:
 https://github.com/akunito/SpinachKeyboardFramework/tree/main/docs
 
+<img width="1135" alt="image" src="https://github.com/akunito/SpinachKeyboardFramework/assets/9993221/717cb4e5-8e10-4f12-940b-2221cf42edd6">
+
+
 Project contains:
 - Keychron K11 Max files for VIA
 - MacOS
