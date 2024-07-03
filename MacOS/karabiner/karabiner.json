@@ -227,6 +227,48 @@
                 "type": "basic"
               },
               {
+                "description": "Caps Lock (as CMD+ALT+CTRL mod mapped by VIA on Keychron) -> Hyper Key",
+                "from": {
+                  "key_code": "left_control",
+                  "modifiers": {
+                    "mandatory": [
+                      "left_command",
+                      "left_option"
+                    ],
+                    "optional": [
+                      "any"
+                    ]
+                  }
+                },
+                "to": [
+                  {
+                    "set_variable": {
+                      "name": "hyper",
+                      "value": 1
+                    }
+                  }
+                ],
+                "to_after_key_up": [
+                  {
+                    "set_variable": {
+                      "name": "hyper",
+                      "value": 0
+                    }
+                  }
+                ],
+                "to_if_alone": [
+                  {
+                    "key_code": "spacebar",
+                    "modifiers": [
+                      "left_command",
+                      "left_control",
+                      "left_option"
+                    ]
+                  }
+                ],
+                "type": "basic"
+              },
+              {
                 "description": "MICE_4 -> HYPER",
                 "from": {
                   "modifiers": {
@@ -6963,7 +7005,7 @@
                 ]
               },
               {
-                "description": "Screenshots (rectangle to Clipboard)",
+                "description": "Screenshots (rectangle to Clipboard) (bind to flameshot)",
                 "to": [
                   {
                     "key_code": "c",
