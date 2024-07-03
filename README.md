@@ -67,3 +67,26 @@ TODO:
 - Fix bugs after this change
 - Adjust AutoHotKeys
 - Update and unify documentation
+
+
+VIA
+To map Caps Lock to Hyper key by firmware level
+Map any KEY on VIA to make LCTL + LALT + LGUI + non key
+- Choose a KEY and go to Special / Any
+- Type the code to replace the original key by
+```json
+MT(MOD_LCTL | MOD_LALT | MOD_LGUI,KC_NO)
+```
+Map to make LCTL + LSFT + LAT + LGUI + non key
+```json
+MT(MOD_LCTL | MOD_LSFT | MOD_LALT | MOD_LGUI,KC_NO)
+```
+
+This way we can map anything on any Operative System by shortcuts
+As Capslock will send CTRL ALT CMD to any system, and this can be mapped everywhere.
+For example you can do:
+- Capslock + 1             -> go to virtual desk 1
+- Capslock + Shift + 1     -> send window to desk 1
+- Capslock + Q             -> go to virtual desk on the left
+- Capslock + T             -> open or focus on terminal
+- Capslock + G             -> open or focus on chromium
