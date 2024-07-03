@@ -6,9 +6,13 @@ https://github.com/akunito/SpinachKeyboardFramework/tree/main/docs
 
 Project contains:
 - Keychron K11 Max files for VIA
+  - Hyper Key map on Caps Lock
+    - Mapping (Caps Lock) to send (L_CTL + L_ALT + L_CMD)
+    - This allows to create shortcuts on any Operative System
 - MacOS
   - Karabiner | typescript project that builds karabiner.json
       - Makes Caps Lock to behive as Hyper key
+      - Recognize the combination of (L_CTL + L_ALT + L_CMD) to set Hyper key variable (to unify, so we can use this VIA mod on any operative system)
       - Makes Mouse Side Button 4 to behive as Hyper Key
       - Set sublayers under Hyper key to be able to use the same key for different functions.
       - Able to execute commands and scripts with a shortcut
@@ -57,8 +61,9 @@ Project contains:
   - You can find these scripts here https://github.com/akunito/myScripts/tree/main/MACOS 
 
 TODO:
-- Map CapsLock as Hyper (ctrl+alt+win) at VIA level
-- Make Karabiner to recognize this new change
+- DONE - Map CapsLock as Hyper (ctrl+alt+win) at VIA level
+- DONE - Make Karabiner to recognize this new change
+- Create shortcuts on Plasma 5 using Hyper key !!
 - Fix bugs after this change
 - Adjust AutoHotKeys
 - Update and unify documentation
