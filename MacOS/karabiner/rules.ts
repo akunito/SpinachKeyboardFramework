@@ -552,7 +552,6 @@ const rules: KarabinerRules[] = [
         to: [{ key_code: "display_brightness_decrement" }],
       },
       // ================================================================== SCREENSHOTS
-      // ============ THIS HAS BEEN REPLACED BY FLAMESHOT !!!
       g: {
         description: "Screenshots (GUI)",
         to: [{ key_code: "g",
@@ -569,7 +568,7 @@ const rules: KarabinerRules[] = [
             modifiers: ["left_command", "left_control", "left_option"], }, ],
       },
       c: {
-        description: "Screenshots (rectangle to Clipboard) (bind to flameshot)",
+        description: "Screenshots (rectangle to Clipboard) (bind to Flameshot)",
         to: [{ key_code: "c",
             modifiers: ["left_command", "left_control", "left_option"], }, ],
       },

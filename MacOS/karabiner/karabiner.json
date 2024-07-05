@@ -6958,7 +6958,7 @@
                 ]
               },
               {
-                "description": "Screenshots (rectangle to Clipboard) (bind to flameshot)",
+                "description": "Screenshots (rectangle to Clipboard) (bind to Flameshot)",
                 "to": [
                   {
                     "key_code": "c",
