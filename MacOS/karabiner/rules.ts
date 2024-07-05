@@ -12,7 +12,7 @@ const scriptPath = "~/syncthing/git_repos/mySCRIPTS/MACOS";
 const rules: KarabinerRules[] = [
   // Define the Hyper key itself
   {
-    description: "Hyper Key (⌃⌥⇧⌘)",
+    description: "Hyper Key (⌃⌥⌘)",
     manipulators: [
       {
         description: "CAPS LOCK -> HYPER",
@@ -47,7 +47,7 @@ const rules: KarabinerRules[] = [
         type: "basic",
       },
       {
-        description: "Caps Lock (as CMD+ALT+CTRL mod mapped by VIA on Keychron) -> Hyper Key!",
+        description: "Caps Lock (as CMD+ALT+CTRL mod mapped by VIA on Keychron) -> Hyper Key.",
         from: {
           key_code: "left_control",
           modifiers: {
@@ -112,66 +112,20 @@ const rules: KarabinerRules[] = [
         type: "basic",
       },
       {
-        description: "VIA Clipboard Cut",
+        description: "Switch RCtrl to RCmd",
         from: {
-          key_code: "cut",
+          key_code: "right_control",
+          modifiers: {
+            optional: ["any"],
+          },
         },
-        to_after_key_up: [
+        to: [
           {
-            key_code: "x",
-            modifiers: ["left_command"],
+            key_code: "right_command"
           },
         ],
-        to_if_alone: [
-        ],
         type: "basic",
-      },
-      {
-        description: "VIA Clipboard Copy",
-        from: {
-          key_code: "copy",
-        },
-        to_after_key_up: [
-          {
-            key_code: "c",
-            modifiers: ["left_command"],
-          },
-        ],
-        to_if_alone: [
-        ],
-        type: "basic",
-      },
-      {
-        description: "VIA Clipboard Paste",
-        from: {
-          key_code: "paste",
-        },
-        to_after_key_up: [
-          {
-            key_code: "v",
-            modifiers: ["left_command"],
-          },
-        ],
-        to_if_alone: [
-        ],
-        type: "basic",
-      },
-      {
-        description: "VIA Clipboard Undo",
-        from: {
-          key_code: "undo",
-        },
-        to_after_key_up: [
-          {
-            key_code: "z",
-            modifiers: ["left_command"],
-          },
-        ],
-        to_if_alone: [
-        ],
-        type: "basic",
-      },
-
+      }
       // {
       //   description: "RIGHT_CMD -> FN (for inbuild keyboard)",
       //   from: {
@@ -290,7 +244,6 @@ const rules: KarabinerRules[] = [
       to: [{ key_code: "w",
           modifiers: ["left_command", "left_control", "left_option"], }, ],
     },
-
     1: {
       description: "Space: 1",
       to: [{ key_code: "1",
@@ -553,8 +506,8 @@ const rules: KarabinerRules[] = [
     // ===================================================================================================================
     // ============================================================================================= SYSTEM CONTROLS / AUDIO / SCREENSHOTS
     // ===================================================================================================================
-    // z?? = "System Control"
-    z: {
+    // Shift = "System Control"
+    left_shift: {
       // ================================================================== POWER CONTROL
       delete_forward: { // execute a shell_command with the varialbe scriptPath + lock_screen.sh
         to: [{ shell_command: `${scriptPath}/powerControl/lock_screen.sh` }],
@@ -615,7 +568,7 @@ const rules: KarabinerRules[] = [
             modifiers: ["left_command", "left_control", "left_option"], }, ],
       },
       c: {
-        description: "Screenshots (rectangle to Clipboard) (bind to flameshot)",
+        description: "Screenshots (rectangle to Clipboard) (bind to Flameshot)",
         to: [{ key_code: "c",
             modifiers: ["left_command", "left_control", "left_option"], }, ],
       },
