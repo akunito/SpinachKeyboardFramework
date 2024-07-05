@@ -5,15 +5,15 @@ https://github.com/akunito/SpinachKeyboardFramework/tree/main/docs
 
 ===========================================================================================================
 Project content:
-- 1. Glossary
-- 2. VIA adjustments 
-- 3. MacOS mapping
-- 4. Linux mapping
-- 5. Windows mapping
-- 6. TODO
+- (1) Glossary
+- (2) VIA adjustments 
+- (3) MacOS mapping
+- (4) Linux mapping
+- (5) Windows mapping
+- (6) TODO
 ===========================================================================================================
 ===========================================================================================================
-- 1. Glossary
+- (1) Glossary
   - Hyper key
     this is how we name the combination of (Ctrl + Alt + Win) keys together.
     This allows us to create shortcuts without conflicts on any system.
@@ -32,7 +32,7 @@ Project content:
     - Alt == Opt
 ===========================================================================================================
 ===========================================================================================================
-- 2. VIA adjustments
+- (2) VIA adjustments
   This is the base of the rest of the project.
   We do 2 main changes (2.1, 2.2) and an additional (2.3) that includes smaller changes for our VIA layout
   Content:
