@@ -3,7 +3,7 @@ https://github.com/akunito/SpinachKeyboardFramework/tree/main/docs
 
 <img width="1135" alt="image" src="https://github.com/akunito/SpinachKeyboardFramework/assets/9993221/717cb4e5-8e10-4f12-940b-2221cf42edd6">
 
-===========================================================================================================
+===================================================
 Project content:
 - (1) Glossary
 - (2) VIA adjustments 
@@ -11,8 +11,10 @@ Project content:
 - (4) Linux mapping
 - (5) Windows mapping
 - (6) TODO
-===========================================================================================================
-===========================================================================================================
+
+
+===================================================
+===================================================
 - (1) Glossary
   - Hyper key
     this is how we name the combination of (Ctrl + Alt + Win) keys together.
@@ -30,8 +32,10 @@ Project content:
     - Super == CMD == WIN == GUI
     The same for Alt and Option
     - Alt == Opt
-===========================================================================================================
-===========================================================================================================
+
+   
+===================================================
+===================================================
 - (2) VIA adjustments
   This is the base of the rest of the project.
   We do 2 main changes (2.1, 2.2) and an additional (2.3) that includes smaller changes for our VIA layout
@@ -93,8 +97,10 @@ Project content:
 
   - (2.3) Keyboard general VIA Layout
     TODO: Print here my general VIA layouts
-===========================================================================================================
-===========================================================================================================
+
+
+===================================================
+===================================================
 - (3) MacOS mapping
   Content:
   - (3.1) Karabiner
@@ -134,16 +140,20 @@ Project content:
        
   - (3.4) Scripts
     - You might find that some shortcuts are pointing to scripts that are not included on this project.
-    - You can find these scripts here https://github.com/akunito/myScripts/tree/main/MACOS 
-===========================================================================================================
-===========================================================================================================
+    - You can find these scripts here https://github.com/akunito/myScripts/tree/main/MACOS
+   
+    
+===================================================
+===================================================
 - (4) Linux mapping
   - I recommend KDE Plasma for this, as it allows all the modifications that are needed, without installing any additional package.
     I'm still working on it but it looks like if Plasma is set correctly, you even can avoid using tilling managers,
     saving time and having more features and stability.
   - TODO: To include dotfiles
-===========================================================================================================
-===========================================================================================================
+ 
+  
+===================================================
+===================================================
 - (5) Windows mapping
   Content:
   - (5.1) AutoHotKeys v2 script for CapsLock
@@ -161,8 +171,10 @@ Project content:
   - (5.3) PowerToys
     There is an alternative called PowerToys by Microsoft, It might be less powerfull for some specific needs.
     Anyway PowerToys provide many other power tools, not only keybindings, so it worth a look.
-===========================================================================================================
-===========================================================================================================
+
+    
+===================================================
+===================================================
 - (6) TODO:
 - DONE - Map CapsLock as Hyper (ctrl+alt+win) at VIA level
 - DONE - Make Karabiner to recognize this new change
