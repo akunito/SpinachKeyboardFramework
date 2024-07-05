@@ -59,10 +59,6 @@ Project content:
           ```json
           MT(MOD_LCTL | MOD_LALT | MOD_LGUI,KC_NO)
           ```
-          Map to make LCTL + LSFT + LAT + LGUI + non key
-          ```json
-          MT(MOD_LCTL | MOD_LSFT | MOD_LALT | MOD_LGUI,KC_NO)
-          ```
   
     - (B) Mapping by the Operative System
       Some of the ways to do this will be explained later for each system.
