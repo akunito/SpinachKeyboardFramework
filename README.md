@@ -150,6 +150,7 @@ Project content:
   - (5.1) AutoHotKeys v2 script for CapsLock
   - (5.2) AutoHotKeys v2 script for Hyper Key
   - (5.3) PowerTools
+  - (5.4) AutoHotKeys v1 script for Easy Windo Dragging KDE style
  
   - (5.1) AutoHotKeys v2 script for CapsLock.<br>
     Script included on project's files.<br>
@@ -162,6 +163,13 @@ Project content:
   - (5.3) PowerToys.<br>
     There is an alternative called PowerToys by Microsoft, It might be less powerfull for some specific needs.<br>
     Anyway PowerToys provide many other power tools, not only keybindings, so it worth a look.
+    
+  - (5.4) AutoHotKeys v1 script for Easy Windo Dragging KDE style
+    Functionality to move windows clicking on any part of the window
+    - To move the window with (ALT + Left Click)
+    - To resize windows with (ALT + Right Click)
+    You already have AutohotKeys v2 installed and want to use this script as well.
+    Try to run this script v1, you will get a message from Autohotkeys v2 asking you if you want to install v1 while keeping v2, so you can run both type of scripts.
 
     
 --------------------------------------------------
