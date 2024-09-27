@@ -197,12 +197,30 @@ const rules: KarabinerRules[] = [
     // ===================================================================================================================
     // ============================================================================================= GLOBAL NAVIGATION: APPS
     // ===================================================================================================================
+    // To use without Yabai scripting (Apple protection / SIP enabled)
+    // p: app("Bitwarden"),
+    // g: app("Chromium"),
+    // d: app("Obsidian"),
+    // v: app("Vivaldi"),
+    // c: app("Visual Studio Code"),
+    // t: app("kitty"),
+    // e: app("Finder"),
+    // y: app("Spotify"),
+    // m: app("Activity Monitor"),
+    // s: app("System Settings"),
+    // x: app("Calendar"),
+    // To use with Yabai scripting (Apple protection / SIP disabled)
     p: app("Bitwarden"),
     g: app("Chromium"),
     d: app("Obsidian"),
     v: app("Vivaldi"),
     c: app("Visual Studio Code"),
-    t: app("kitty"),
+    // t: app("kitty"),
+    t: {
+      description: "Kitty",
+      to: [{ key_code: "t",
+          modifiers: ["left_command", "left_control", "left_option"], }, ],
+    },
     e: app("Finder"),
     y: app("Spotify"),
     m: app("Activity Monitor"),
@@ -571,6 +589,152 @@ const rules: KarabinerRules[] = [
         description: "Screenshots (rectangle to Clipboard) (bind to Flameshot)",
         to: [{ key_code: "c",
             modifiers: ["left_command", "left_control", "left_option"], }, ],
+      },
+      // ================================================================== WIN NAV (triggers skhdrc)
+      // TODO: Switch all this to trigger Yabai directly and disable skhdrc
+      q: {
+        description: "Send Window to Left (triggers skhdrc)",
+        to: [
+          {
+            key_code: "q",
+            modifiers: ["right_control", "right_option", "left_command", "left_shift"],
+          },
+        ],
+      },
+      w: {
+        description: "Send Window to Right (triggers skhdrc)",
+        to: [
+          {
+            key_code: "w",
+            modifiers: ["right_control", "right_option", "left_command", "left_shift"],
+          },
+        ],
+      },
+      left_arrow: {
+        description: "Send Window to Left Monitor (triggers skhdrc)",
+        to: [
+          {
+            key_code: "left_arrow",
+            modifiers: ["right_control", "right_option", "left_command", "left_shift"],
+          },
+        ],
+      },
+      right_arrow: {
+        description: "Send Window to Right Monitor (triggers skhdrc)",
+        to: [
+          {
+            key_code: "right_arrow",
+            modifiers: ["right_control", "right_option", "left_command", "left_shift"],
+          },
+        ],
+      },
+      down_arrow: {
+        description: "Toggle Window Float (triggers skhdrc)",
+        to: [
+          {
+            key_code: "down_arrow",
+            modifiers: ["right_control", "right_option", "left_command", "left_shift"],
+          },
+        ],
+      },
+      up_arrow: {
+        description: "Toggle Window Sticky (show on all spaces) (triggers skhdrc)",
+        to: [
+          {
+            key_code: "up_arrow",
+            modifiers: ["right_control", "right_option", "left_command", "left_shift"],
+          },
+        ],
+      },
+      1: {
+        description: "Send Window to 1 (triggers skhdrc)",
+        to: [
+          {
+            key_code: "1",
+            modifiers: ["right_control", "right_option", "left_command", "left_shift"],
+          },
+        ],
+      },
+      2: {
+        description: "Send Window to 2 (triggers skhdrc)",
+        to: [
+          {
+            key_code: "2",
+            modifiers: ["right_control", "right_option", "left_command", "left_shift"],
+          },
+        ],
+      },
+      3: {
+        description: "Send Window to 3 (triggers skhdrc)",
+        to: [
+          {
+            key_code: "3",
+            modifiers: ["right_control", "right_option", "left_command", "left_shift"],
+          },
+        ],
+      },
+      4: {
+        description: "Send Window to 4 (triggers skhdrc)",
+        to: [
+          {
+            key_code: "4",
+            modifiers: ["right_control", "right_option", "left_command", "left_shift"],
+          },
+        ],
+      },
+      5: {
+        description: "Send Window to 5 (triggers skhdrc)",
+        to: [
+          {
+            key_code: "5",
+            modifiers: ["right_control", "right_option", "left_command", "left_shift"],
+          },
+        ],
+      },
+      6: {
+        description: "Send Window to 6 (triggers skhdrc)",
+        to: [
+          {
+            key_code: "6",
+            modifiers: ["right_control", "right_option", "left_command", "left_shift"],
+          },
+        ],
+      },
+      7: {
+        description: "Send Window to 7 (triggers skhdrc)",
+        to: [
+          {
+            key_code: "7",
+            modifiers: ["right_control", "right_option", "left_command", "left_shift"],
+          },
+        ],
+      },
+      8: {
+        description: "Send Window to 8 (triggers skhdrc)",
+        to: [
+          {
+            key_code: "8",
+            modifiers: ["right_control", "right_option", "left_command", "left_shift"],
+          },
+        ],
+      },
+      9: {
+        description: "Send Window to 9 (triggers skhdrc)",
+        to: [
+          {
+            key_code: "9",
+            modifiers: ["right_control", "right_option", "left_command", "left_shift"],
+          },
+        ],
+      },
+      0: {
+        description: "Send Window to 10 (triggers skhdrc)",
+        to: [
+          {
+            key_code: "0",
+            modifiers: ["right_control", "right_option", "left_command", "left_shift"],
+          },
+        ],
       },
     },
 
