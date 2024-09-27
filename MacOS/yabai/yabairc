@@ -37,6 +37,8 @@ yabai -m rule --add app="^com.realvnc.vncviewer$" --float
 yabai -m rule --add app="^com.realvnc.vncviewer$" manage=off
 yabai -m rule --add app="^VNC Viewer$" --float
 yabai -m rule --add app="^VNC Viewer$" manage=off
+yabai -m rule --add app="^Calendar$" --float
+yabai -m rule --add app="^Calendar$" manage=off
 
 # ============================================================== Decoration
 # padding set to 12px
@@ -55,7 +57,7 @@ yabai -m config normal_window_opacity 0.9
 # set focus follows mouse mode (default: off, options: off, autoraise, autofocus)
 yabai -m config focus_follows_mouse autofocus
 # center mouse on window with focus
-yabai -m config mouse_follows_focus on
+# yabai -m config mouse_follows_focus on # TESTING without
 
 # modifier for clicking and dragging with mouse
 yabai -m config mouse_modifier alt
