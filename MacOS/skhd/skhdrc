@@ -69,6 +69,15 @@ shift + alt - e : yabai -m space --balance
 shift + cmd + alt + ctrl - left : yabai -m window --display west; yabai -m display --focus west;
 shift + cmd + alt + ctrl - right : yabai -m window --display east; yabai -m display --focus east;
 
+# ==== corner window ====
+# Window Float & to corner Top-Left
+shift + cmd + alt + ctrl - a : yabai -m window --space prev; # TODO
+# Window Float & to corner Top-Right
+shift + cmd + alt + ctrl - s : yabai -m window --space prev; # TODO
+# Window Float & to corner Bot-Right
+shift + cmd + alt + ctrl - x : yabai -m window --space prev; # TODO
+# Window Float & to corner Bot-Left
+shift + cmd + alt + ctrl - z : yabai -m window --space prev; # TODO
 
 # move window to prev and next space
 shift + cmd + alt + ctrl - q : yabai -m window --space prev;
@@ -86,11 +95,22 @@ shift + cmd + alt + ctrl - 8 : yabai -m window --space 8;
 shift + cmd + alt + ctrl - 9 : yabai -m window --space 9;
 shift + cmd + alt + ctrl - 0 : yabai -m window --space 10;
 
-# toggle kitty
-cmd + alt + ctrl - t : if [ $(yabai -m query --windows  --window | jq  '.app') = '"kitty"' ]; then skhd -k "cmd - h" ; else open /Applications/kitty.app; fi
+# ======================= Toggle APPS ======================
+cmd + alt + ctrl - p : /Users/akunito/syncthing/git_repos/.config/skhd/skhd_functions.sh "toggle_app" "Bitwarden"
+cmd + alt + ctrl - t : /Users/akunito/syncthing/git_repos/.config/skhd/skhd_functions.sh "toggle_app" "kitty"
+cmd + alt + ctrl - y : /Users/akunito/syncthing/git_repos/.config/skhd/skhd_functions.sh "toggle_app" "Spotify"
+cmd + alt + ctrl - x : /Users/akunito/syncthing/git_repos/.config/skhd/skhd_functions.sh "toggle_app" "Calendar"
+cmd + alt + ctrl - u : /Users/akunito/syncthing/git_repos/.config/skhd/skhd_functions.sh "toggle_app" "Calculator"
+cmd + alt + ctrl - r : /Users/akunito/syncthing/git_repos/.config/skhd/skhd_functions.sh "toggle_app" "VLC"
+cmd + alt + ctrl - o : /Users/akunito/syncthing/git_repos/.config/skhd/skhd_functions.sh "toggle_app" "qBittorrent"
+cmd + alt + ctrl - m : /Users/akunito/syncthing/git_repos/.config/skhd/skhd_functions.sh "toggle_app" "Activity Monitor"
+cmd + alt + ctrl - s : /Users/akunito/syncthing/git_repos/.config/skhd/skhd_functions.sh "toggle_app" "System Settings"
 
 # ====================== Starting/Stopping/Restarting Yabai ======================
 # stop/start/restart yabai
 ctrl + alt - q : yabai --stop-service
 ctrl + alt - s : yabai --start-service
-ctrl + alt - r : yabai --restart-service
+ctrl + alt - r : yabai --restart-service ; skhd --restart-service ;
+ctrl + alt - s : skhd --restart-service
+
+ctrl + alt - y : yabai -m query --windows > ~/yabai_config.json

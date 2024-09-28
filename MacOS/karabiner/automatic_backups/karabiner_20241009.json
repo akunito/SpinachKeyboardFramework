@@ -183,9 +183,6 @@
         }
       ],
       "name": "Default",
-      "virtual_hid_keyboard": {
-        "keyboard_type_v2": "ansi"
-      },
       "complex_modifications": {
         "rules": [
           {
@@ -2372,15 +2369,9 @@
             "description": "Hyper Key + p",
             "manipulators": [
               {
-                "description": "Bitwarden",
                 "to": [
                   {
-                    "key_code": "p",
-                    "modifiers": [
-                      "left_command",
-                      "left_control",
-                      "left_option"
-                    ]
+                    "shell_command": "echo \"test\" >> ~/yabai_result"
                   }
                 ],
                 "type": "basic",

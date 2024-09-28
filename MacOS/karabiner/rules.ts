@@ -209,8 +209,13 @@ const rules: KarabinerRules[] = [
     // m: app("Activity Monitor"),
     // s: app("System Settings"),
     // x: app("Calendar"),
+
     // To use with Yabai scripting (Apple protection / SIP disabled)
-    p: app("Bitwarden"),
+    p: {
+      description: "Bitwarden",
+      to: [{ key_code: "p",
+          modifiers: ["left_command", "left_control", "left_option"], }, ],
+    },
     g: app("Chromium"),
     d: app("Obsidian"),
     v: app("Vivaldi"),
@@ -222,10 +227,44 @@ const rules: KarabinerRules[] = [
           modifiers: ["left_command", "left_control", "left_option"], }, ],
     },
     e: app("Finder"),
-    y: app("Spotify"),
-    m: app("Activity Monitor"),
-    s: app("System Settings"),
-    x: app("Calendar"),
+    y: {
+      description: "Spotify",
+      to: [{ key_code: "y",
+          modifiers: ["left_command", "left_control", "left_option"], }, ],
+    },
+    m: {
+      description: "Activity Monitor",
+      to: [{ key_code: "m",
+          modifiers: ["left_command", "left_control", "left_option"], }, ],
+    },
+    s: {
+      description: "System Settings",
+      to: [{ key_code: "s",
+          modifiers: ["left_command", "left_control", "left_option"], }, ],
+    },
+    x: {
+      description: "Calendar",
+      to: [{ key_code: "x",
+          modifiers: ["left_command", "left_control", "left_option"], }, ],
+    },
+    // x: { // execute a shell_command with the varialbe scriptPath + lock_screen.sh
+    //   to: [{ shell_command: `/Users/akunito/syncthing/git_repos/.config/skhd/skhd_functions.sh "toggle_app" "Calendar"` }],
+    // },
+    u: {
+      description: "Calculator",
+      to: [{ key_code: "u",
+          modifiers: ["left_command", "left_control", "left_option"], }, ],
+    },
+    r: {
+      description: "Reproductor (VLC)",
+      to: [{ key_code: "r",
+          modifiers: ["left_command", "left_control", "left_option"], }, ],
+    },
+    o: {
+      description: "qBittorrent",
+      to: [{ key_code: "o",
+          modifiers: ["left_command", "left_control", "left_option"], }, ],
+    },
     // ===================================================================================================================
     // ============================================================================================= GLOBAL NAVIGATION: SPACES, FOCUS
     // ===================================================================================================================
@@ -610,6 +649,42 @@ const rules: KarabinerRules[] = [
           },
         ],
       },
+      a: {
+        description: "Window Float & to corner Top-Left (triggers skhdrc)",
+        to: [
+          {
+            key_code: "a",
+            modifiers: ["right_control", "right_option", "left_command", "left_shift"],
+          },
+        ],
+      },
+      s: {
+        description: "Window Float & to corner Top-Right (triggers skhdrc)",
+        to: [
+          {
+            key_code: "s",
+            modifiers: ["right_control", "right_option", "left_command", "left_shift"],
+          },
+        ],
+      },
+      x: {
+        description: "Window Float & to corner Bot-Right (triggers skhdrc)",
+        to: [
+          {
+            key_code: "x",
+            modifiers: ["right_control", "right_option", "left_command", "left_shift"],
+          },
+        ],
+      },
+      z: {
+        description: "Window Float & to corner Bot-Left (triggers skhdrc)",
+        to: [
+          {
+            key_code: "z",
+            modifiers: ["right_control", "right_option", "left_command", "left_shift"],
+          },
+        ],
+      },
       left_arrow: {
         description: "Send Window to Left Monitor (triggers skhdrc)",
         to: [
@@ -779,28 +854,28 @@ const rules: KarabinerRules[] = [
     // ===================================================================================================================
     // ============================================================================================= Raycast / Alfred or whatever
     // ===================================================================================================================
-    // r = "Raycast"
-    r: {
-      n: open("raycast://script-commands/dismiss-notifications"),
-      l: open(
-        "raycast://extensions/stellate/mxstbr-commands/create-mxs-is-shortlink"
-      ),
-      e: open(
-        "raycast://extensions/raycast/emoji-symbols/search-emoji-symbols"
-      ),
-      p: open("raycast://extensions/raycast/raycast/confetti"),
-      a: open("raycast://extensions/raycast/raycast-ai/ai-chat"),
-      s: open("raycast://extensions/peduarte/silent-mention/index"),
-      h: open(
-        "raycast://extensions/raycast/clipboard-history/clipboard-history"
-      ),
-      1: open(
-        "raycast://extensions/VladCuciureanu/toothpick/connect-favorite-device-1"
-      ),
-      2: open(
-        "raycast://extensions/VladCuciureanu/toothpick/connect-favorite-device-2"
-      ),
-    },
+    // // r = "Raycast"
+    // r: {
+    //   n: open("raycast://script-commands/dismiss-notifications"),
+    //   l: open(
+    //     "raycast://extensions/stellate/mxstbr-commands/create-mxs-is-shortlink"
+    //   ),
+    //   e: open(
+    //     "raycast://extensions/raycast/emoji-symbols/search-emoji-symbols"
+    //   ),
+    //   p: open("raycast://extensions/raycast/raycast/confetti"),
+    //   a: open("raycast://extensions/raycast/raycast-ai/ai-chat"),
+    //   s: open("raycast://extensions/peduarte/silent-mention/index"),
+    //   h: open(
+    //     "raycast://extensions/raycast/clipboard-history/clipboard-history"
+    //   ),
+    //   1: open(
+    //     "raycast://extensions/VladCuciureanu/toothpick/connect-favorite-device-1"
+    //   ),
+    //   2: open(
+    //     "raycast://extensions/VladCuciureanu/toothpick/connect-favorite-device-2"
+    //   ),
+    // },
   }),
 ];
 
@@ -992,6 +1067,9 @@ fs.writeFileSync(
             },
           ],
           name: "Default",
+          virtual_hid_keyboard: { // after some update, Karabiner ask you if you use ansi, ISO or other type of keyboards. With this you can set it directly, avoiding the prompt.
+            keyboard_type_v2: "ansi", 
+          },
           complex_modifications: {
             rules,
           },
