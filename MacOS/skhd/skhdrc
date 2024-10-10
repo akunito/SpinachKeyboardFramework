@@ -1,20 +1,23 @@
 
+# Most of commands are being called by Karabiner directly, but kept for reference. 
+# If you don't use karabiner, this should work as well
+
 # ====================== Changing Space Focus ======================
 # change space focus
-cmd + ctrl + alt - 1 : yabai -m space --focus 1 # disable SIP required / optional: Bind it to System Keyboard?
-cmd + ctrl + alt - 2 : yabai -m space --focus 2
-cmd + ctrl + alt - 3 : yabai -m space --focus 3
-cmd + ctrl + alt - 4 : yabai -m space --focus 4
-cmd + ctrl + alt - 5 : yabai -m space --focus 5
-cmd + ctrl + alt - 6 : yabai -m space --focus 6
-cmd + ctrl + alt - 7 : yabai -m space --focus 7
-cmd + ctrl + alt - 8 : yabai -m space --focus 8
-cmd + ctrl + alt - 9 : yabai -m space --focus 9
-cmd + ctrl + alt - 0 : yabai -m space --focus 10
+# cmd + ctrl + alt - 1 : yabai -m space --focus 1 # disable SIP required / optional: Bind it to System Keyboard?
+# cmd + ctrl + alt - 2 : yabai -m space --focus 2
+# cmd + ctrl + alt - 3 : yabai -m space --focus 3
+# cmd + ctrl + alt - 4 : yabai -m space --focus 4
+# cmd + ctrl + alt - 5 : yabai -m space --focus 5
+# cmd + ctrl + alt - 6 : yabai -m space --focus 6
+# cmd + ctrl + alt - 7 : yabai -m space --focus 7
+# cmd + ctrl + alt - 8 : yabai -m space --focus 8
+# cmd + ctrl + alt - 9 : yabai -m space --focus 9
+# cmd + ctrl + alt - 0 : yabai -m space --focus 10
 
 # change to prev/next space if it exists, otherwise focus the first or last space
-cmd + ctrl + alt - q : yabai -m space --focus prev || yabai -m space --focus last
-cmd + ctrl + alt - w : yabai -m space --focus next || yabai -m space --focus first
+# cmd + ctrl + alt - q : yabai -m space --focus prev || yabai -m space --focus last
+# cmd + ctrl + alt - w : yabai -m space --focus next || yabai -m space --focus first
 
 # ======================  Changing Window Focus ======================
 # change window focus within space
@@ -39,10 +42,10 @@ shift + alt - y : yabai -m space --mirror y-axis
 shift + alt - x : yabai -m space --mirror x-axis
 
 # toggle window float
-shift + cmd + alt + ctrl - down : yabai -m window --toggle float --grid 4:4:1:1:2:2
+# shift + cmd + alt + ctrl - down : yabai -m window --toggle float --grid 4:4:1:1:2:2
 
 # toggle whether the focused window should be shown on all spaces
-shift + cmd + alt + ctrl - up : yabai -m window --toggle sticky
+# shift + cmd + alt + ctrl - up : yabai -m window --toggle sticky
 
 # ====================== Modifying Window Size ======================
 # maximize a window NOT WORKING ?
@@ -66,45 +69,45 @@ shift + alt - e : yabai -m space --balance
 # ctrl + alt - l : yabai -m window --warp east
 
 # move window to display left and right
-shift + cmd + alt + ctrl - left : yabai -m window --display west; yabai -m display --focus west;
-shift + cmd + alt + ctrl - right : yabai -m window --display east; yabai -m display --focus east;
+# shift + cmd + alt + ctrl - left : yabai -m window --display west; yabai -m display --focus west;
+# shift + cmd + alt + ctrl - right : yabai -m window --display east; yabai -m display --focus east;
 
 # ==== corner window ====
-# Window Float & to corner Top-Left
-shift + cmd + alt + ctrl - a : yabai -m window --space prev; # TODO
-# Window Float & to corner Top-Right
-shift + cmd + alt + ctrl - s : yabai -m window --space prev; # TODO
-# Window Float & to corner Bot-Right
-shift + cmd + alt + ctrl - x : yabai -m window --space prev; # TODO
-# Window Float & to corner Bot-Left
-shift + cmd + alt + ctrl - z : yabai -m window --space prev; # TODO
+# # Window Float & to corner Top-Left
+# shift + cmd + alt + ctrl - a : yabai -m window --space prev; # TODO
+# # Window Float & to corner Top-Right
+# shift + cmd + alt + ctrl - s : yabai -m window --space prev; # TODO
+# # Window Float & to corner Bot-Right
+# shift + cmd + alt + ctrl - x : yabai -m window --space prev; # TODO
+# # Window Float & to corner Bot-Left
+# shift + cmd + alt + ctrl - z : yabai -m window --space prev; # TODO
 
-# move window to prev and next space
-shift + cmd + alt + ctrl - q : yabai -m window --space prev;
-shift + cmd + alt + ctrl - w : yabai -m window --space next;
+# # move window to prev and next space
+# shift + cmd + alt + ctrl - q : yabai -m window --space prev;
+# shift + cmd + alt + ctrl - w : yabai -m window --space next;
 
-# move window to space #
-shift + cmd + alt + ctrl - 1 : yabai -m window --space 1;
-shift + cmd + alt + ctrl - 2 : yabai -m window --space 2;
-shift + cmd + alt + ctrl - 3 : yabai -m window --space 3;
-shift + cmd + alt + ctrl - 4 : yabai -m window --space 4;
-shift + cmd + alt + ctrl - 5 : yabai -m window --space 5;
-shift + cmd + alt + ctrl - 6 : yabai -m window --space 6;
-shift + cmd + alt + ctrl - 7 : yabai -m window --space 7;
-shift + cmd + alt + ctrl - 8 : yabai -m window --space 8;
-shift + cmd + alt + ctrl - 9 : yabai -m window --space 9;
-shift + cmd + alt + ctrl - 0 : yabai -m window --space 10;
+# # move window to space #
+# shift + cmd + alt + ctrl - 1 : yabai -m window --space 1;
+# shift + cmd + alt + ctrl - 2 : yabai -m window --space 2;
+# shift + cmd + alt + ctrl - 3 : yabai -m window --space 3;
+# shift + cmd + alt + ctrl - 4 : yabai -m window --space 4;
+# shift + cmd + alt + ctrl - 5 : yabai -m window --space 5;
+# shift + cmd + alt + ctrl - 6 : yabai -m window --space 6;
+# shift + cmd + alt + ctrl - 7 : yabai -m window --space 7;
+# shift + cmd + alt + ctrl - 8 : yabai -m window --space 8;
+# shift + cmd + alt + ctrl - 9 : yabai -m window --space 9;
+# shift + cmd + alt + ctrl - 0 : yabai -m window --space 10;
 
 # ======================= Toggle APPS ======================
-cmd + alt + ctrl - p : /Users/akunito/syncthing/git_repos/.config/skhd/skhd_functions.sh "toggle_app" "Bitwarden"
-cmd + alt + ctrl - t : /Users/akunito/syncthing/git_repos/.config/skhd/skhd_functions.sh "toggle_app" "kitty"
-cmd + alt + ctrl - y : /Users/akunito/syncthing/git_repos/.config/skhd/skhd_functions.sh "toggle_app" "Spotify"
-cmd + alt + ctrl - x : /Users/akunito/syncthing/git_repos/.config/skhd/skhd_functions.sh "toggle_app" "Calendar"
-cmd + alt + ctrl - u : /Users/akunito/syncthing/git_repos/.config/skhd/skhd_functions.sh "toggle_app" "Calculator"
-cmd + alt + ctrl - r : /Users/akunito/syncthing/git_repos/.config/skhd/skhd_functions.sh "toggle_app" "VLC"
-cmd + alt + ctrl - o : /Users/akunito/syncthing/git_repos/.config/skhd/skhd_functions.sh "toggle_app" "qBittorrent"
-cmd + alt + ctrl - m : /Users/akunito/syncthing/git_repos/.config/skhd/skhd_functions.sh "toggle_app" "Activity Monitor"
-cmd + alt + ctrl - s : /Users/akunito/syncthing/git_repos/.config/skhd/skhd_functions.sh "toggle_app" "System Settings"
+# cmd + alt + ctrl - p : /Users/akunito/syncthing/git_repos/.config/yabai/yabai_functions.sh "toggle_app" "Bitwarden"
+# cmd + alt + ctrl - t : /Users/akunito/syncthing/git_repos/.config/yabai/yabai_functions.sh "toggle_app" "kitty"
+# cmd + alt + ctrl - y : /Users/akunito/syncthing/git_repos/.config/yabai/yabai_functions.sh "toggle_app" "Spotify"
+# cmd + alt + ctrl - x : /Users/akunito/syncthing/git_repos/.config/yabai/yabai_functions.sh "toggle_app" "Calendar"
+# cmd + alt + ctrl - u : /Users/akunito/syncthing/git_repos/.config/yabai/yabai_functions.sh "toggle_app" "Calculator"
+# cmd + alt + ctrl - r : /Users/akunito/syncthing/git_repos/.config/yabai/yabai_functions.sh "toggle_app" "VLC"
+# cmd + alt + ctrl - o : /Users/akunito/syncthing/git_repos/.config/yabai/yabai_functions.sh "toggle_app" "qBittorrent"
+# cmd + alt + ctrl - m : /Users/akunito/syncthing/git_repos/.config/yabai/yabai_functions.sh "toggle_app" "Activity Monitor"
+# cmd + alt + ctrl - s : /Users/akunito/syncthing/git_repos/.config/yabai/yabai_functions.sh "toggle_app" "System Settings"
 
 # ====================== Starting/Stopping/Restarting Yabai ======================
 # stop/start/restart yabai
@@ -114,3 +117,4 @@ ctrl + alt - r : yabai --restart-service ; skhd --restart-service ;
 ctrl + alt - s : skhd --restart-service
 
 ctrl + alt - y : yabai -m query --windows > ~/yabai_config.json
+ctrl + alt - z : yabai -m query --windows --window > ~/yabai_config.json

@@ -1,9 +1,7 @@
-// This is the advanced version in case you have disabled SIP following Yabai documentation
+// This is the simple version in case you have not disabled SIP
 
 // If you want to use advanced features of Yabai you need to disable partially the Apple protection / SIP
 // This allows to open/minimize/focus windows and other advanced management, that is not possible with SIP enabled
-
-// If you cannot disable SIP, you can replace this rules.ts version by rules_SIP_ENABLE.ts
 
 import fs from "fs";
 import { KarabinerRules } from "./types";
@@ -14,7 +12,6 @@ import { createHyperSubLayers, app, open, rectangle } from "./utils";
 
 // declare a variable for scriptPach = ~/github/mxstbr/karabiner/scripts/
 const scriptPath = "~/syncthing/git_repos/mySCRIPTS/MACOS";
-const yabaiFunctionsPath = "~/syncthing/git_repos/.config/yabai/yabai_functions.sh";
 
 const rules: KarabinerRules[] = [
   // Define the Hyper key itself
@@ -204,73 +201,23 @@ const rules: KarabinerRules[] = [
     // ===================================================================================================================
     // ============================================================================================= GLOBAL NAVIGATION: APPS
     // ===================================================================================================================
-    // To manage windows we call the script .config/skhd/skhd_functions.sh
-    p: {
-      description: "Bitwarden",
-      to: [{ shell_command: `/bin/zsh -c 'source ~/.zshrc; ${yabaiFunctionsPath} navigate_app "Bitwarden"'` }],
-    },
-    g: {
-      description: "Chromium",
-      to: [{ shell_command: `/bin/zsh -c 'source ~/.zshrc; ${yabaiFunctionsPath} navigate_app "Chromium"'` }],
-    },
-    d: {
-      description: "Obsidian",
-      to: [{ shell_command: `/bin/zsh -c 'source ~/.zshrc; ${yabaiFunctionsPath} navigate_app "Obsidian"'` }],
-    },
-    v: {
-      description: "Vivaldi",
-      to: [{ shell_command: `/bin/zsh -c 'source ~/.zshrc; ${yabaiFunctionsPath} navigate_app "Vivaldi"'` }],
-    },
-    c: {
-      description: "Visual Studio Code",
-      to: [{ shell_command: `/bin/zsh -c 'source ~/.zshrc; ${yabaiFunctionsPath} navigate_app "Code"'` }],
-    },
-    t: {
-      description: "Kitty",
-      to: [{ shell_command: `/bin/zsh -c 'source ~/.zshrc; ${yabaiFunctionsPath} navigate_app "kitty"'` }],
-    },
-    e: {
-      description: "Finder",
-      to: [{ shell_command: `/bin/zsh -c 'source ~/.zshrc; ${yabaiFunctionsPath} navigate_app "Finder"'` }],
-    },
-    y: {
-      description: "Spotify",
-      to: [{ shell_command: `/bin/zsh -c 'source ~/.zshrc; ${yabaiFunctionsPath} navigate_app "Spotify"'` }],
-    },
-    m: {
-      description: "Activity Monitor",
-      to: [{ shell_command: `/bin/zsh -c 'source ~/.zshrc; ${yabaiFunctionsPath} navigate_app "Activity Monitor"'` }],
-    },
-    s: {
-      description: "System Settings",
-      to: [{ shell_command: `/bin/zsh -c 'source ~/.zshrc; ${yabaiFunctionsPath} navigate_app "System Settings"'` }],
-    },
-    x: {
-      description: "Calendar",
-      to: [{ shell_command: `/bin/zsh -c 'source ~/.zshrc; ${yabaiFunctionsPath} navigate_app "Calendar"'` }],
-    },
-    u: {
-      description: "Calculator",
-      to: [{ shell_command: `/bin/zsh -c 'source ~/.zshrc; ${yabaiFunctionsPath} navigate_app "Calculator"'` }],
-    },
-    r: {
-      description: "Reproductor (VLC)",
-      to: [{ shell_command: `/bin/zsh -c 'source ~/.zshrc; ${yabaiFunctionsPath} navigate_app "VLC"'` }],
-    },
-    o: {
-      description: "qBittorrent",
-      to: [{ shell_command: `/bin/zsh -c 'source ~/.zshrc; ${yabaiFunctionsPath} navigate_app "qBittorrent"'` }],
-    },
-
-    // TEST
-    n: {
-      description: "TEST",
-      to: [{ shell_command: `/bin/zsh -c 'source ~/.zshrc; ${yabaiFunctionsPath} nav_multiple_windows_app'` }],
-    },
+    p: app("Bitwarden"),
+    g: app("Chromium"),
+    d: app("Obsidian"),
+    v: app("Vivaldi"),
+    c: app("Visual Studio Code"),
+    t: app("kitty"),
+    e: app("Finder"),
+    y: app("Spotify"),
+    m: app("Activity Monitor"),
+    s: app("System Settings"),
+    x: app("Calendar"),
 
     // ===================================================================================================================
     // ============================================================================================= GLOBAL NAVIGATION: SPACES, FOCUS
     // ===================================================================================================================
+    // SYSTEM SHORTCUTS (in case System Integrity Protection is enabled)
+    // This can be replaced by Yabai when SIP is disabled??
     tab: {
       description: "Mission Control",
       to: [{ key_code: "tab",
@@ -281,81 +228,78 @@ const rules: KarabinerRules[] = [
       to: [{ key_code: "escape",
           modifiers: ["left_command", "left_control", "left_option"], }, ],
     },
-    up_arrow: {
+    hyphen: {
       description: "Focus to the menu bar (-)",
       to: [{ key_code: "hyphen",
           modifiers: ["left_command", "left_control", "left_option"], }, ],
     },
-    down_arrow: {
+    equal_sign: {
       description: "Focus to Dock (equal_sign)",
       to: [{ key_code: "equal_sign",
           modifiers: ["left_command", "left_control", "left_option"], }, ],
     },
-    left_arrow: {
-      description: "Space: SWAP with LEFT",
-      to: [{ shell_command: `/bin/zsh -c 'source ~/.zshrc; ${yabaiFunctionsPath} space_management move left'` }],
-    },
-    right_arrow: {
-      description: "Space: SWAP with RIGHT",
-      to: [{ shell_command: `/bin/zsh -c 'source ~/.zshrc; ${yabaiFunctionsPath} space_management move right'` }],
-    },
-    // ===================================================== NAV thought the Deep SPACE
+    // ===================================================== SPACE LEFT/RIGHT
     q: {
       description: "Space: LEFT",
-      to: [{ shell_command: `/bin/zsh -c 'source ~/.zshrc; ${yabaiFunctionsPath} space_management prev'` }],
+      to: [{ key_code: "q",
+          modifiers: ["left_command", "left_control", "left_option"], }, ],
     },
     w: {
       description: "Space: RIGHT",
-      to: [{ shell_command: `/bin/zsh -c 'source ~/.zshrc; ${yabaiFunctionsPath} space_management next'` }],
+      to: [{ key_code: "w",
+          modifiers: ["left_command", "left_control", "left_option"], }, ],
     },
     1: {
       description: "Space: 1",
-      to: [{ shell_command: `/bin/zsh -c 'source ~/.zshrc; ${yabaiFunctionsPath} space_management 1'` }],
+      to: [{ key_code: "1",
+          modifiers: ["left_command", "left_control", "left_option"], }, ],
     },
     2: {
       description: "Space: 2",
-      to: [{ shell_command: `/bin/zsh -c 'source ~/.zshrc; ${yabaiFunctionsPath} space_management 2'` }],
+      to: [{ key_code: "2",
+          modifiers: ["left_command", "left_control", "left_option"], }, ],
     },
     3: {
       description: "Space: 3",
-      to: [{ shell_command: `/bin/zsh -c 'source ~/.zshrc; ${yabaiFunctionsPath} space_management 3'` }],
+      to: [{ key_code: "3",
+          modifiers: ["left_command", "left_control", "left_option"], }, ],
     },
     4: {
       description: "Space: 4",
-      to: [{ shell_command: `/bin/zsh -c 'source ~/.zshrc; ${yabaiFunctionsPath} space_management 4'` }],
+      to: [{ key_code: "4",
+          modifiers: ["left_command", "left_control", "left_option"], }, ],
     },
     5: {
       description: "Space: 5",
-      to: [{ shell_command: `/bin/zsh -c 'source ~/.zshrc; ${yabaiFunctionsPath} space_management 5'` }],
+      to: [{ key_code: "5",
+          modifiers: ["left_command", "left_control", "left_option"], }, ],
     },
     6: {
       description: "Space: 6",
-      to: [{ shell_command: `/bin/zsh -c 'source ~/.zshrc; ${yabaiFunctionsPath} space_management 6'` }],
+      to: [{ key_code: "6",
+          modifiers: ["left_command", "left_control", "left_option"], }, ],
     },
     7: {
       description: "Space: 7",
-      to: [{ shell_command: `/bin/zsh -c 'source ~/.zshrc; ${yabaiFunctionsPath} space_management 7'` }],
+      to: [{ key_code: "7",
+          modifiers: ["left_command", "left_control", "left_option"], }, ],
     },
     8: {
       description: "Space: 8",
-      to: [{ shell_command: `/bin/zsh -c 'source ~/.zshrc; ${yabaiFunctionsPath} space_management 8'` }],
+      to: [{ key_code: "8",
+          modifiers: ["left_command", "left_control", "left_option"], }, ],
     },
     9: {
       description: "Space: 9",
-      to: [{ shell_command: `/bin/zsh -c 'source ~/.zshrc; ${yabaiFunctionsPath} space_management 9'` }],
+      to: [{ key_code: "9",
+          modifiers: ["left_command", "left_control", "left_option"], }, ],
     },
     0: {
-      description: "Space: 10",
-      to: [{ shell_command: `/bin/zsh -c 'source ~/.zshrc; ${yabaiFunctionsPath} space_management 10'` }],
+      description: "Space: 0",
+      to: [{ key_code: "0",
+          modifiers: ["left_command", "left_control", "left_option"], }, ],
     },
-    hyphen: {
-      description: "Space: 11",
-      to: [{ shell_command: `/bin/zsh -c 'source ~/.zshrc; ${yabaiFunctionsPath} space_management 11'` }],
-    },
-    equal_sign: {
-      description: "Space: 12",
-      to: [{ shell_command: `/bin/zsh -c 'source ~/.zshrc; ${yabaiFunctionsPath} space_management 12'` }],
-    },
+
     
     // ===================================================================================================================
     // ============================================================================================= BROWSER
@@ -372,167 +316,196 @@ const rules: KarabinerRules[] = [
 
 
     // ===================================================================================================================
+    // ============================================================================================= Currently OFF
+    // ===================================================================================================================
+    // // Open applications -> replicate below for mouse the same way
+    // right_command: {
+    //   b: app("Bitwarden"),
+    //   g: app("Chromium"),
+    //   d: app("Obsidian"),
+    //   v: app("Vivaldi"),
+    //   c: app("Visual Studio Code"),
+    //   t: app("Alacritty"),
+    //   e: app("Finder"),
+    //   y: app("Spotify"),
+    //   m: app("Activity Monitor"),
+    //   s: app("System Settings"),
+    //   x: app("Calendar"),
+    //   // l: open(
+    //   //   "raycast://extensions/stellate/mxstbr-commands/open-mxs-is-shortlink"
+    //   // ),
+    // },
+    // // Open applications with mouse too // "to_replace1" should be replaced by button5 running "replace_string.sh" after building the changes,
+    // to_replace1: {
+    //   b: app("Bitwarden"),
+    //   g: app("Chromium"),
+    //   d: app("Obsidian"),
+    //   v: app("Vivaldi"),
+    //   c: app("Visual Studio Code"),
+    //   t: app("Alacritty"),
+    //   e: app("Finder"),
+    //   y: app("Spotify"),
+    //   m: app("Activity Monitor"),
+    //   s: app("System Settings"),
+    //   x: app("Calendar"),
+    //   // l: open(
+    //   //   "raycast://extensions/stellate/mxstbr-commands/open-mxs-is-shortlink"
+    //   // ),
+    // },
+
+    // ===================================================================================================================
     // ============================================================================================= TILING WINDOW MANAGER
     // ===================================================================================================================
-    spacebar: {
-      // ================================================================== WIN NAV
-      // TODO: Switch all this to trigger Yabai directly and disable skhdrc
-      // ================== SEND to SPACES
-      1: {
-        description: "Send Window to 1",
-        to: [{ shell_command: `/bin/zsh -c 'source ~/.zshrc; ${yabaiFunctionsPath} window_management 1'` }],
+    // ======================================== rectangle.app
+    // "Window" via rectangle.app
+    // right_alt: {
+    //   semicolon: {
+    //     description: "Window: Hide",
+    //     to: [
+    //       {
+    //         key_code: "h",
+    //         modifiers: ["left_command"],
+    //       },
+    //     ],
+    //   },
+    //   y: rectangle("previous-display"),
+    //   o: rectangle("next-display"),
+    //   k: rectangle("top-half"),
+    //   j: rectangle("bottom-half"),
+    //   h: rectangle("left-half"),
+    //   l: rectangle("right-half"),
+    //   f: rectangle("maximize"),
+    //   u: {
+    //     description: "Window: Previous Tab",
+    //     to: [
+    //       {
+    //         key_code: "tab",
+    //         modifiers: ["right_control", "right_shift"],
+    //       },
+    //     ],
+    //   },
+    //   i: {
+    //     description: "Window: Next Tab",
+    //     to: [
+    //       {
+    //         key_code: "tab",
+    //         modifiers: ["right_control"],
+    //       },
+    //     ],
+    //   },
+    //   n: {
+    //     description: "Window: Next Window",
+    //     to: [
+    //       {
+    //         key_code: "grave_accent_and_tilde",
+    //         modifiers: ["left_command"],
+    //       },
+    //     ],
+    //   },
+    //   b: {
+    //     description: "Window: Back",
+    //     to: [
+    //       {
+    //         key_code: "open_bracket",
+    //         modifiers: ["left_command"],
+    //       },
+    //     ],
+    //   },
+    //   // Note: No literal connection. Both f and n are already taken.
+    //   m: {
+    //     description: "Window: Forward",
+    //     to: [
+    //       {
+    //         key_code: "close_bracket",
+    //         modifiers: ["left_command"],
+    //       },
+    //     ],
+    //   },
+    //   d: {
+    //     description: "Window: Next display",
+    //     to: [
+    //       {
+    //         key_code: "right_arrow",
+    //         modifiers: ["right_control", "right_option", "left_command"],
+    //       },
+    //     ],
+    //   },
+    // },
+
+    // ======================================== Yabai / to be recoded after disable SIP
+
+    right_alt: {
+      semicolon: {
+        description: "Window: Hide",
+        to: [
+          {
+            key_code: "h",
+            modifiers: ["left_command"],
+          },
+        ],
       },
-      2: {
-        description: "Send Window to 2",
-        to: [{ shell_command: `/bin/zsh -c 'source ~/.zshrc; ${yabaiFunctionsPath} window_management 2'` }],
-      },
-      3: {
-        description: "Send Window to 3",
-        to: [{ shell_command: `/bin/zsh -c 'source ~/.zshrc; ${yabaiFunctionsPath} window_management 3'` }],
-      },
-      4: {
-        description: "Send Window to 4",
-        to: [{ shell_command: `/bin/zsh -c 'source ~/.zshrc; ${yabaiFunctionsPath} window_management 4'` }],
-      },
-      5: {
-        description: "Send Window to 5",
-        to: [{ shell_command: `/bin/zsh -c 'source ~/.zshrc; ${yabaiFunctionsPath} window_management 5'` }],
-      },
-      6: {
-        description: "Send Window to 6",
-        to: [{ shell_command: `/bin/zsh -c 'source ~/.zshrc; ${yabaiFunctionsPath} window_management 6'` }],
-      },
-      7: {
-        description: "Send Window to 7",
-        to: [{ shell_command: `/bin/zsh -c 'source ~/.zshrc; ${yabaiFunctionsPath} window_management 7'` }],
-      },
-      8: {
-        description: "Send Window to 8",
-        to: [{ shell_command: `/bin/zsh -c 'source ~/.zshrc; ${yabaiFunctionsPath} window_management 8'` }],
-      },
-      9: {
-        description: "Send Window to 9",
-        to: [{ shell_command: `/bin/zsh -c 'source ~/.zshrc; ${yabaiFunctionsPath} window_management 9'` }],
-      },
-      0: {
-        to: [{ shell_command: `/bin/zsh -c 'source ~/.zshrc; ${yabaiFunctionsPath} window_management 10'` }],
-      },
-      hyphen: {
-        to: [{ shell_command: `/bin/zsh -c 'source ~/.zshrc; ${yabaiFunctionsPath} window_management 11'` }],
-      },
-      equal_sign: {
-        to: [{ shell_command: `/bin/zsh -c 'source ~/.zshrc; ${yabaiFunctionsPath} window_management 12'` }],
-      },
-      q: {
-        description: "Send Window to Left",
-        to: [{ shell_command: `/bin/zsh -c 'source ~/.zshrc; ${yabaiFunctionsPath} window_management send_prev_space'` }],
-      },
-      w: {
-        description: "Send Window to Right",
-        to: [{ shell_command: `/bin/zsh -c 'source ~/.zshrc; ${yabaiFunctionsPath} window_management send_next_space'` }],
-      },
-      // ================== MOVE to CORNERS
-      e: {
-        description: "Window to corner Top-Left",
-        to: [{ shell_command: `/bin/zsh -c 'source ~/.zshrc; ${yabaiFunctionsPath} window_management grid_or_swap top_left'` }],
-      },
-      t: {
-        description: "Window to corner Top-Right",
-        to: [{ shell_command: `/bin/zsh -c 'source ~/.zshrc; ${yabaiFunctionsPath} window_management grid_or_swap top_right'` }],
-      },
-      c: {
-        description: "Window to corner Bot-Left",
-        to: [{ shell_command: `/bin/zsh -c 'source ~/.zshrc; ${yabaiFunctionsPath} window_management grid_or_swap bot_left'` }],
-      },
-      b: {
-        description: "Window to corner Bot-Right",
-        to: [{ shell_command: `/bin/zsh -c 'source ~/.zshrc; ${yabaiFunctionsPath} window_management grid_or_swap bot_right'` }],
-      },
-      // ================== MOVE to N/W/S/E
-      r: {
-        description: "Window to North",
-        to: [{ shell_command: `/bin/zsh -c 'source ~/.zshrc; ${yabaiFunctionsPath} window_management grid_or_swap north'` }],
-      },
-      v: {
-        description: "Window to South",
-        to: [{ shell_command: `/bin/zsh -c 'source ~/.zshrc; ${yabaiFunctionsPath} window_management grid_or_swap south'` }],
-      },
-      d: {
-        description: "Window to West",
-        to: [{ shell_command: `/bin/zsh -c 'source ~/.zshrc; ${yabaiFunctionsPath} window_management grid_or_swap west'` }],
-      },
-      g: {
-        description: "Window to East",
-        to: [{ shell_command: `/bin/zsh -c 'source ~/.zshrc; ${yabaiFunctionsPath} window_management grid_or_swap east'` }],
-      },
-      // ================== SWAP by Cycle Clockwise/Counter Clockwise
-      // Cycle the Tile to prev/next window focused
-      x: {
-        description: "Cycle clockwise",
-        to: [{ shell_command: `/bin/zsh -c 'source ~/.zshrc; ${yabaiFunctionsPath} window_management cycle_clockwise'` }],
-      },
-      z: {
-        description: "Cycle counter clockwise",
-        to: [{ shell_command: `/bin/zsh -c 'source ~/.zshrc; ${yabaiFunctionsPath} window_management cycle_counterclockwise'` }],
-      },
-      // ================== SEND to MONITORS
-      left_arrow: {
-        description: "Send Window to Left Monitor",
-        to: [{ shell_command: `/bin/zsh -c 'source ~/.zshrc; ${yabaiFunctionsPath} window_management send_prev_display'` }],
-      },
-      right_arrow: {
-        description: "Send Window to Right Monitor",
-        to: [{ shell_command: `/bin/zsh -c 'source ~/.zshrc; ${yabaiFunctionsPath} window_management send_next_display'` }],
-      },
-      // ================== TOGGLE PROPERTIES
-      a: {
-        description: "Toggle Window Float",
-        to: [{ shell_command: `/bin/zsh -c 'source ~/.zshrc; ${yabaiFunctionsPath} window_management make_float'` }],
-      },
-      s: {
-        description: "Toggle Window Sticky (show on all spaces)",
-        to: [{ shell_command: `/bin/zsh -c 'source ~/.zshrc; ${yabaiFunctionsPath} window_management make_sticky'` }],
-      },
-      f: {
-        description: "Toggle Window FullScreen",
-        to: [{ shell_command: `/bin/zsh -c 'source ~/.zshrc; ${yabaiFunctionsPath} window_management make_fullscreen'` }],
-      },
-      // ================== MOVE WINDOW
-      // Move the focused window manually
-      h: {
-        description: "Move window left",
-        to: [{ shell_command: `/bin/zsh -c 'source ~/.zshrc; ${yabaiFunctionsPath} window_management move left'` }],
-      },
-      l: {
-        description: "Move window right",
-        to: [{ shell_command: `/bin/zsh -c 'source ~/.zshrc; ${yabaiFunctionsPath} window_management move right'` }],
-      },
-      j: {
-        description: "Move window up",
-        to: [{ shell_command: `/bin/zsh -c 'source ~/.zshrc; ${yabaiFunctionsPath} window_management move up'` }],
-      },
-      k: {
-        description: "Move window down",
-        to: [{ shell_command: `/bin/zsh -c 'source ~/.zshrc; ${yabaiFunctionsPath} window_management move down'` }],
-      },
-      // ================== RESIZE WINDOW
-      // Resize the focused window manually
-      o: {
-        description: "Resize window wider",
-        to: [{ shell_command: `/bin/zsh -c 'source ~/.zshrc; ${yabaiFunctionsPath} window_management resize wider'` }],
-      },
-      y: {
-        description: "Resize window narrower",
-        to: [{ shell_command: `/bin/zsh -c 'source ~/.zshrc; ${yabaiFunctionsPath} window_management resize narrower'` }],
-      },
+      y: rectangle("previous-display"),
+      o: rectangle("next-display"),
+      k: rectangle("top-half"),
+      j: rectangle("bottom-half"),
+      h: rectangle("left-half"),
+      l: rectangle("right-half"),
+      f: rectangle("maximize"),
       u: {
-        description: "Resize window taller",
-        to: [{ shell_command: `/bin/zsh -c 'source ~/.zshrc; ${yabaiFunctionsPath} window_management resize taller'` }],
+        description: "Window: Previous Tab",
+        to: [
+          {
+            key_code: "tab",
+            modifiers: ["right_control", "right_shift"],
+          },
+        ],
       },
       i: {
-        description: "Resize window shorter",
-        to: [{ shell_command: `/bin/zsh -c 'source ~/.zshrc; ${yabaiFunctionsPath} window_management resize shorter'` }],
-      },      
+        description: "Window: Next Tab",
+        to: [
+          {
+            key_code: "tab",
+            modifiers: ["right_control"],
+          },
+        ],
+      },
+      n: {
+        description: "Window: Next Window",
+        to: [
+          {
+            key_code: "grave_accent_and_tilde",
+            modifiers: ["left_command"],
+          },
+        ],
+      },
+      b: {
+        description: "Window: Back",
+        to: [
+          {
+            key_code: "open_bracket",
+            modifiers: ["left_command"],
+          },
+        ],
+      },
+      // Note: No literal connection. Both f and n are already taken.
+      m: {
+        description: "Window: Forward",
+        to: [
+          {
+            key_code: "close_bracket",
+            modifiers: ["left_command"],
+          },
+        ],
+      },
+      d: {
+        description: "Window: Next display",
+        to: [
+          {
+            key_code: "right_arrow",
+            modifiers: ["right_control", "right_option", "left_command"],
+          },
+        ],
+      },
     },
 
     // ===================================================================================================================
@@ -604,6 +577,188 @@ const rules: KarabinerRules[] = [
         to: [{ key_code: "c",
             modifiers: ["left_command", "left_control", "left_option"], }, ],
       },
+      // ================================================================== WIN NAV (triggers skhdrc)
+      // TODO: Switch all this to trigger Yabai directly and disable skhdrc
+      q: {
+        description: "Send Window to Left (triggers skhdrc)",
+        to: [
+          {
+            key_code: "q",
+            modifiers: ["right_control", "right_option", "left_command", "left_shift"],
+          },
+        ],
+      },
+      w: {
+        description: "Send Window to Right (triggers skhdrc)",
+        to: [
+          {
+            key_code: "w",
+            modifiers: ["right_control", "right_option", "left_command", "left_shift"],
+          },
+        ],
+      },
+      a: {
+        description: "Window Float & to corner Top-Left (triggers skhdrc)",
+        to: [
+          {
+            key_code: "a",
+            modifiers: ["right_control", "right_option", "left_command", "left_shift"],
+          },
+        ],
+      },
+      s: {
+        description: "Window Float & to corner Top-Right (triggers skhdrc)",
+        to: [
+          {
+            key_code: "s",
+            modifiers: ["right_control", "right_option", "left_command", "left_shift"],
+          },
+        ],
+      },
+      x: {
+        description: "Window Float & to corner Bot-Right (triggers skhdrc)",
+        to: [
+          {
+            key_code: "x",
+            modifiers: ["right_control", "right_option", "left_command", "left_shift"],
+          },
+        ],
+      },
+      z: {
+        description: "Window Float & to corner Bot-Left (triggers skhdrc)",
+        to: [
+          {
+            key_code: "z",
+            modifiers: ["right_control", "right_option", "left_command", "left_shift"],
+          },
+        ],
+      },
+      left_arrow: {
+        description: "Send Window to Left Monitor (triggers skhdrc)",
+        to: [
+          {
+            key_code: "left_arrow",
+            modifiers: ["right_control", "right_option", "left_command", "left_shift"],
+          },
+        ],
+      },
+      right_arrow: {
+        description: "Send Window to Right Monitor (triggers skhdrc)",
+        to: [
+          {
+            key_code: "right_arrow",
+            modifiers: ["right_control", "right_option", "left_command", "left_shift"],
+          },
+        ],
+      },
+      down_arrow: {
+        description: "Toggle Window Float (triggers skhdrc)",
+        to: [
+          {
+            key_code: "down_arrow",
+            modifiers: ["right_control", "right_option", "left_command", "left_shift"],
+          },
+        ],
+      },
+      up_arrow: {
+        description: "Toggle Window Sticky (show on all spaces) (triggers skhdrc)",
+        to: [
+          {
+            key_code: "up_arrow",
+            modifiers: ["right_control", "right_option", "left_command", "left_shift"],
+          },
+        ],
+      },
+      1: {
+        description: "Send Window to 1 (triggers skhdrc)",
+        to: [
+          {
+            key_code: "1",
+            modifiers: ["right_control", "right_option", "left_command", "left_shift"],
+          },
+        ],
+      },
+      2: {
+        description: "Send Window to 2 (triggers skhdrc)",
+        to: [
+          {
+            key_code: "2",
+            modifiers: ["right_control", "right_option", "left_command", "left_shift"],
+          },
+        ],
+      },
+      3: {
+        description: "Send Window to 3 (triggers skhdrc)",
+        to: [
+          {
+            key_code: "3",
+            modifiers: ["right_control", "right_option", "left_command", "left_shift"],
+          },
+        ],
+      },
+      4: {
+        description: "Send Window to 4 (triggers skhdrc)",
+        to: [
+          {
+            key_code: "4",
+            modifiers: ["right_control", "right_option", "left_command", "left_shift"],
+          },
+        ],
+      },
+      5: {
+        description: "Send Window to 5 (triggers skhdrc)",
+        to: [
+          {
+            key_code: "5",
+            modifiers: ["right_control", "right_option", "left_command", "left_shift"],
+          },
+        ],
+      },
+      6: {
+        description: "Send Window to 6 (triggers skhdrc)",
+        to: [
+          {
+            key_code: "6",
+            modifiers: ["right_control", "right_option", "left_command", "left_shift"],
+          },
+        ],
+      },
+      7: {
+        description: "Send Window to 7 (triggers skhdrc)",
+        to: [
+          {
+            key_code: "7",
+            modifiers: ["right_control", "right_option", "left_command", "left_shift"],
+          },
+        ],
+      },
+      8: {
+        description: "Send Window to 8 (triggers skhdrc)",
+        to: [
+          {
+            key_code: "8",
+            modifiers: ["right_control", "right_option", "left_command", "left_shift"],
+          },
+        ],
+      },
+      9: {
+        description: "Send Window to 9 (triggers skhdrc)",
+        to: [
+          {
+            key_code: "9",
+            modifiers: ["right_control", "right_option", "left_command", "left_shift"],
+          },
+        ],
+      },
+      0: {
+        description: "Send Window to 10 (triggers skhdrc)",
+        to: [
+          {
+            key_code: "0",
+            modifiers: ["right_control", "right_option", "left_command", "left_shift"],
+          },
+        ],
+      },
     },
 
     // ===================================================================================================================
@@ -611,7 +766,7 @@ const rules: KarabinerRules[] = [
     // ===================================================================================================================
     // Spacebar cause can be used confty by any hand with hjlk. right_command or right_option might work too.
     // so that hjkl work like they do in vim
-    right_control: {
+    spacebar: {
       h: {
         to: [{ key_code: "left_arrow" }],
       },
