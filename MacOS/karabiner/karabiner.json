@@ -9650,6 +9650,30 @@
                     "value": 1
                   }
                 ]
+              },
+              {
+                "description": "Restart Yabai & Skhdrc",
+                "to": [
+                  {
+                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; $YABAI_FUNCTIONS_PATH \"reset_config\"'"
+                  }
+                ],
+                "type": "basic",
+                "from": {
+                  "key_code": "return_or_enter",
+                  "modifiers": {
+                    "optional": [
+                      "any"
+                    ]
+                  }
+                },
+                "conditions": [
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_spacebar",
+                    "value": 1
+                  }
+                ]
               }
             ]
           },

@@ -532,7 +532,12 @@ const rules: KarabinerRules[] = [
       i: {
         description: "Resize window shorter",
         to: [{ shell_command: `/bin/zsh -c 'source ~/.zshrc; ${yabaiFunctionsPath} window_management resize shorter'` }],
-      },      
+      },
+      // ================== GENERAL SETTINGS RELATED TO WINDOWS and AUTOMATION
+      return_or_enter: {
+        description: "Restart Yabai & Skhdrc",
+        to: [{ shell_command: `/bin/zsh -c 'source ~/.zshrc; $YABAI_FUNCTIONS_PATH reset_config'` }],
+      },
     },
 
     // ===================================================================================================================

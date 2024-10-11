@@ -1,5 +1,7 @@
 #!/bin/bash
 
+source $VARIABLES_PATH
+
 # Enable or disable logging
 LOGGING_ENABLED=true
 
@@ -8,6 +10,79 @@ log_message() {
   local message="$1"
   if [ "$LOGGING_ENABLED" = true ]; then
     echo "$message" >> ~/yabai_result
+  fi
+}
+
+
+# ============================================= Configure Spaces
+set_spaces_singleMonitor() {
+  echo "set_spaces"
+  
+  # Bind Spaces to Display 1
+  for i in {1..12}; do
+      yabai -m space "$i" --display 1
+  done
+
+  # set the window rules
+  yabai -m rule --add app="^Obsidian$" space=1
+  yabai -m rule --add app="^Vivaldi$" space=2
+}
+
+set_windows_singleMonitors() {
+  echo "set_windows"
+  # set Kitty Grid
+  yabai -m window $(yabai -m query --windows | jq ".[] | select(.app == \"kitty\").id") --grid 10:10:5:1:5:8
+}
+
+set_spaces_externalMonitors() {
+  echo "set_spaces"
+  
+  # Bind Spaces to Display 1
+  for i in {1..6}; do
+      yabai -m space "$i" --display 1
+  done
+
+  # Bind Spaces to Display 2
+  for i in {7..9}; do
+      yabai -m space "$i" --display 2
+  done
+
+  # Bind Spaces to Display 3
+  for i in {10..12}; do
+      yabai -m space "$i" --display 3
+  done
+
+  # set the window rules
+  # yabai -m rule --add app="^Obsidian$" display=2 # ????????? TODO
+  yabai -m rule --add app="^Vivaldi$" space=1
+}
+
+set_windows_externalMonitors() {
+  echo "set_windows"
+  # set Kitty Grid
+  yabai -m window $(yabai -m query --windows | jq ".[] | select(.app == \"kitty\").id") --grid 20:20:10:1:10:16
+  # set qBittorrent Grid
+  # yabai -m window $(yabai -m query --windows | jq ".[] | select(.app == \"qBittorrent\").id") --grid 10:10:5:0:5:5
+}
+
+reset_config() {
+  echo "reset_yabai_config"
+  yabai --restart-service
+  skhd --restart-service
+
+  # Set Spaces according to the number of external monitors
+  log_message "$VARIABLES_PATH"
+  externalMonitorCount=$(bash $COUNTEXTERNALMONITORS_SH)
+  externalMonitorCount=$(echo "$externalMonitorCount" | tr -dc '[:digit:]')
+  log_message "externalMonitorCount: $externalMonitorCount"
+  if [ "$externalMonitorCount" -eq 0 ]; then
+    log_message "Setting up single monitor configuration"
+    set_spaces_singleMonitor
+  elif [ "$externalMonitorCount" -gt 0 ]; then
+    log_message "Setting up external monitor configuration"
+    set_spaces_externalMonitors
+  else
+    echo "script countExternalMonitors_.sh has failed?"
   fi
 }
 
@@ -61,7 +136,7 @@ filter_query() {
   local query
   local app_name="$1"
   query=$(get_full_query_by_app "$app_name")
-  log_message "Query: $query"
+  # log_message "Query: $query" # DEBUG
   # Ensure we wrap the keys correctly in jq
   echo "$query" | jq '[.[] | {id, title, "is-minimized"}]'
 }
@@ -399,6 +474,21 @@ fi
 
 # Main script logic
 case "$1" in
+    set_spaces_singleMonitor)
+        set_spaces_singleMonitor
+        ;;
+    set_windows_singleMonitors)
+        set_windows_singleMonitors
+        ;;
+    set_spaces_externalMonitors)
+        set_spaces_externalMonitors
+        ;;
+    set_windows_externalMonitors)
+        set_windows_externalMonitors
+        ;;
+    reset_config)
+        reset_config
+        ;;
     test)
         test_function
         ;;
