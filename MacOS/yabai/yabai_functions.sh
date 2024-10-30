@@ -3,7 +3,7 @@
 source $VARIABLES_PATH
 
 # Enable or disable logging
-LOGGING_ENABLED=true
+LOGGING_ENABLED=false
 
 # Function for logging messages
 log_message() {
@@ -57,6 +57,49 @@ set_spaces_externalMonitors() {
   yabai -m rule --add app="^Vivaldi$" space=1
 }
 
+make_window_sticky_and_floating() {
+  # Make the window sticky
+  # and config the grid according $2
+  local app_name="$1"
+  local grid="$2"
+  log_message "make_window_sticky_and_floating"
+  log_message "app_name: $app_name"
+  log_message "grid: $grid"
+  # if app is not floating, make it.
+  if [[ "$(yabai -m query --windows | jq --arg app_name "$app_name" '.[] | select(.app == $app_name) | .["is-floating"] // false')" == "false" ]]; then
+    log_message "Making $app_name Float"
+    yabai -m window $(yabai -m query --windows | jq ".[] | select(.app == $app_name).id") --toggle float
+    yabai -m window $(yabai -m query --windows | jq ".[] | select(.app == $app_name).id") --grid 10:10:5:1:5:8
+  fi
+  # if app is not sticky, make it.
+  if [[ "$(yabai -m query --windows | jq --arg app_name "$app_name" '.[] | select(.app == $app_name) | .["is-sticky"] // false')" == "false" ]]; then
+    log_message "Making $app_name Sticky"
+    yabai -m window $(yabai -m query --windows | jq ".[] | select(.app == $app_name).id") --toggle sticky
+    yabai -m window $(yabai -m query --windows | jq ".[] | select(.app == $app_name).id") --grid 10:10:5:1:5:8
+  fi
+
+}
+
+make_window_float() {
+  echo "make_window_float"
+  # set the window rules
+  yabai -m window --toggle float
+}
+
+set_window_rules_singleMonitor() {
+  # asdf
+  log_message "setting window_rules_singleMonitor"
+  # Kitty setup
+  make_window_sticky_and_floating "kitty" "10:10:1:0:9:4"
+}
+
+set_window_rules_externalMonitors() {
+  # asdf
+  log_message "setting window_rules_externalMonitors"
+  # Kitty setup
+  make_window_sticky_and_floating "kitty" "20:20:10:1:10:16"
+}
+
 set_windows_externalMonitors() {
   echo "set_windows"
   # set Kitty Grid
@@ -68,9 +111,10 @@ set_windows_externalMonitors() {
 reset_config() {
   echo "reset_yabai_config"
   yabai --restart-service
-  skhd --restart-service
-
-  # Set Spaces according to the number of external monitors
+  # skhd --restart-service
+  sleep 2 yabai -m query --windows > ~/yabai_config.json
+  # Set Spaces and Windows Rules according to the number of external monitors
+  sleep 1
   log_message "$VARIABLES_PATH"
   externalMonitorCount=$(bash $COUNTEXTERNALMONITORS_SH)
   externalMonitorCount=$(echo "$externalMonitorCount" | tr -dc '[:digit:]')
@@ -78,9 +122,12 @@ reset_config() {
   if [ "$externalMonitorCount" -eq 0 ]; then
     log_message "Setting up single monitor configuration"
     set_spaces_singleMonitor
+    set_window_rules_singleMonitor
   elif [ "$externalMonitorCount" -gt 0 ]; then
     log_message "Setting up external monitor configuration"
     set_spaces_externalMonitors
+    # set_window_rules_externalMonitors
+    set_window_rules_singleMonitor # testing
   else
     echo "script countExternalMonitors_.sh has failed?"
   fi
@@ -235,6 +282,7 @@ navigate_app() {
   if [ -z "$app_id" ]; then
       log_message "Opening $app_name"
       open -a "${app_name}.app"
+      yabai -m window "$app_id" --focus
   else
       local id_count=$(echo "$app_id" | wc -l)
       if [ "$id_count" -eq 1 ]; then

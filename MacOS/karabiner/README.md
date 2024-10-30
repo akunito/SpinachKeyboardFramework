@@ -46,4 +46,4 @@ watches the TypeScript files and rebuilds whenever they change.
 
 ## License
 
-Copyright (c) 2022 Maximilian Stoiber, licensed under the [MIT license](./LICENSE.md).
+Copyright (c) 2022 Maximilian Stoiber, licensed under the [MIT license](02%20-%20git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/karabiner/LICENSE.md).

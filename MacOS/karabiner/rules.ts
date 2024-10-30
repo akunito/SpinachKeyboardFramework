@@ -222,8 +222,8 @@ const rules: KarabinerRules[] = [
       to: [{ shell_command: `/bin/zsh -c 'source ~/.zshrc; ${yabaiFunctionsPath} navigate_app "Vivaldi"'` }],
     },
     c: {
-      description: "Visual Studio Code",
-      to: [{ shell_command: `/bin/zsh -c 'source ~/.zshrc; ${yabaiFunctionsPath} navigate_app "Code"'` }],
+      description: "Cursor",
+      to: [{ shell_command: `/bin/zsh -c 'source ~/.zshrc; ${yabaiFunctionsPath} navigate_app "Cursor"'` }],
     },
     t: {
       description: "Kitty",
@@ -236,6 +236,10 @@ const rules: KarabinerRules[] = [
     y: {
       description: "Spotify",
       to: [{ shell_command: `/bin/zsh -c 'source ~/.zshrc; ${yabaiFunctionsPath} navigate_app "Spotify"'` }],
+    },
+    f: {
+      description: "FreeTube",
+      to: [{ shell_command: `/bin/zsh -c 'source ~/.zshrc; ${yabaiFunctionsPath} navigate_app "FreeTube"'` }],
     },
     m: {
       description: "Activity Monitor",
@@ -261,9 +265,17 @@ const rules: KarabinerRules[] = [
       description: "qBittorrent",
       to: [{ shell_command: `/bin/zsh -c 'source ~/.zshrc; ${yabaiFunctionsPath} navigate_app "qBittorrent"'` }],
     },
+    n: {
+      description: "NordVPN",
+      to: [{ shell_command: `/bin/zsh -c 'source ~/.zshrc; ${yabaiFunctionsPath} navigate_app "NordVPN"'` }],
+    },
+    l: {
+      description: "Telegram",
+      to: [{ shell_command: `/bin/zsh -c 'source ~/.zshrc; ${yabaiFunctionsPath} navigate_app "Telegram"'` }],
+    },
 
     // TEST
-    n: {
+    i: {
       description: "TEST",
       to: [{ shell_command: `/bin/zsh -c 'source ~/.zshrc; ${yabaiFunctionsPath} nav_multiple_windows_app'` }],
     },

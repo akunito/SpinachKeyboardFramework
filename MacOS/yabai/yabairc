@@ -37,6 +37,8 @@ yabai -m rule --add app="^com.realvnc.vncviewer$" manage=off
 yabai -m rule --add app="^VNC Viewer$" manage=off
 yabai -m rule --add app="^Calendar$" manage=off
 yabai -m rule --add app="^Calendar$" sticky=on
+yabai -m rule --add app="^Contacts$" manage=off
+# yabai -m rule --add app="^Contacts$" sticky=on
 yabai -m rule --add app="^Kitty$" manage=off
 yabai -m rule --add app="^Kitty$" sticky=on
 yabai -m rule --add app="^Spotify$" manage=off
@@ -47,6 +49,12 @@ yabai -m rule --add app="^qBittorrent$" manage=off
 yabai -m rule --add app="^qBittorrent$" sticky=on
 yabai -m rule --add app="^VLC$" manage=off
 yabai -m rule --add app="^VLC$" sticky=on
+yabai -m rule --add app="^FreeTube$" manage=off
+yabai -m rule --add app="^FreeTube$" sticky=on
+yabai -m rule --add app="^NordVPN$" manage=off
+yabai -m rule --add app="^NordVPN$" sticky=on
+yabai -m rule --add app="^Telegram$" manage=off
+yabai -m rule --add app="^Telegram$" sticky=on
 
 # Windows containing "info" in the title > float
 # yabai -m rule --add title=".*[Ii]nfo.*" manage=off

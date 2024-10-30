@@ -111,10 +111,10 @@ shift + alt - e : yabai -m space --balance
 
 # ====================== Starting/Stopping/Restarting Yabai ======================
 # stop/start/restart yabai
-ctrl + alt - q : yabai --stop-service
-ctrl + alt - s : yabai --start-service
-ctrl + alt - r : yabai --restart-service ; skhd --restart-service ;
-ctrl + alt - s : skhd --restart-service
+# ctrl + alt - q : yabai --stop-service
+# ctrl + alt - s : yabai --start-service
+# ctrl + alt - r : yabai --restart-service ; skhd --restart-service ;
+# ctrl + alt - s : skhd --restart-service
 
-ctrl + alt - y : yabai -m query --windows > ~/yabai_config.json
-ctrl + alt - z : yabai -m query --windows --window > ~/yabai_config.json
+# ctrl + alt - y : yabai -m query --windows > ~/yabai_config.json
+# ctrl + alt - z : yabai -m query --windows --window > ~/yabai_config.json
