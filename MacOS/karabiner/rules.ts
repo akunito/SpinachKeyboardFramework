@@ -14,7 +14,7 @@ import { createHyperSubLayers, app, open, rectangle } from "./utils";
 
 // declare a variable for scriptPach = ~/github/mxstbr/karabiner/scripts/
 const scriptPath = "~/syncthing/git_repos/mySCRIPTS/MACOS";
-const yabaiFunctionsPath = "~/syncthing/git_repos/.config/yabai/yabai_functions.sh";
+const yabaiFunctionsPath = "~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh";
 
 const rules: KarabinerRules[] = [
   // Define the Hyper key itself

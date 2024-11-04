@@ -335,7 +335,7 @@
                 "description": "Space: 10",
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/.config/yabai/yabai_functions.sh space_management 10'"
+                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh space_management 10'"
                   }
                 ],
                 "type": "basic",
@@ -574,7 +574,7 @@
                 "description": "Space: 1",
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/.config/yabai/yabai_functions.sh space_management 1'"
+                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh space_management 1'"
                   }
                 ],
                 "type": "basic",
@@ -813,7 +813,7 @@
                 "description": "Space: 2",
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/.config/yabai/yabai_functions.sh space_management 2'"
+                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh space_management 2'"
                   }
                 ],
                 "type": "basic",
@@ -1052,7 +1052,7 @@
                 "description": "Space: 3",
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/.config/yabai/yabai_functions.sh space_management 3'"
+                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh space_management 3'"
                   }
                 ],
                 "type": "basic",
@@ -1291,7 +1291,7 @@
                 "description": "Space: 4",
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/.config/yabai/yabai_functions.sh space_management 4'"
+                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh space_management 4'"
                   }
                 ],
                 "type": "basic",
@@ -1530,7 +1530,7 @@
                 "description": "Space: 5",
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/.config/yabai/yabai_functions.sh space_management 5'"
+                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh space_management 5'"
                   }
                 ],
                 "type": "basic",
@@ -1769,7 +1769,7 @@
                 "description": "Space: 6",
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/.config/yabai/yabai_functions.sh space_management 6'"
+                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh space_management 6'"
                   }
                 ],
                 "type": "basic",
@@ -2008,7 +2008,7 @@
                 "description": "Space: 7",
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/.config/yabai/yabai_functions.sh space_management 7'"
+                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh space_management 7'"
                   }
                 ],
                 "type": "basic",
@@ -2247,7 +2247,7 @@
                 "description": "Space: 8",
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/.config/yabai/yabai_functions.sh space_management 8'"
+                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh space_management 8'"
                   }
                 ],
                 "type": "basic",
@@ -2486,7 +2486,7 @@
                 "description": "Space: 9",
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/.config/yabai/yabai_functions.sh space_management 9'"
+                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh space_management 9'"
                   }
                 ],
                 "type": "basic",
@@ -2725,7 +2725,7 @@
                 "description": "Bitwarden",
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/.config/yabai/yabai_functions.sh navigate_app \"Bitwarden\"'"
+                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh navigate_app \"Bitwarden\"'"
                   }
                 ],
                 "type": "basic",
@@ -2964,7 +2964,7 @@
                 "description": "Chromium",
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/.config/yabai/yabai_functions.sh navigate_app \"Chromium\"'"
+                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh navigate_app \"Chromium\"'"
                   }
                 ],
                 "type": "basic",
@@ -3203,7 +3203,7 @@
                 "description": "Obsidian",
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/.config/yabai/yabai_functions.sh navigate_app \"Obsidian\"'"
+                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh navigate_app \"Obsidian\"'"
                   }
                 ],
                 "type": "basic",
@@ -3442,7 +3442,7 @@
                 "description": "Vivaldi",
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/.config/yabai/yabai_functions.sh navigate_app \"Vivaldi\"'"
+                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh navigate_app \"Vivaldi\"'"
                   }
                 ],
                 "type": "basic",
@@ -3678,10 +3678,10 @@
             "description": "Hyper Key + c",
             "manipulators": [
               {
-                "description": "Visual Studio Code",
+                "description": "Cursor",
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/.config/yabai/yabai_functions.sh navigate_app \"Code\"'"
+                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh navigate_app \"Cursor\"'"
                   }
                 ],
                 "type": "basic",
@@ -3920,7 +3920,7 @@
                 "description": "Kitty",
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/.config/yabai/yabai_functions.sh navigate_app \"kitty\"'"
+                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh navigate_app \"kitty\"'"
                   }
                 ],
                 "type": "basic",
@@ -4159,7 +4159,7 @@
                 "description": "Finder",
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/.config/yabai/yabai_functions.sh navigate_app \"Finder\"'"
+                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh navigate_app \"Finder\"'"
                   }
                 ],
                 "type": "basic",
@@ -4398,7 +4398,7 @@
                 "description": "Spotify",
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/.config/yabai/yabai_functions.sh navigate_app \"Spotify\"'"
+                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh navigate_app \"Spotify\"'"
                   }
                 ],
                 "type": "basic",
@@ -4637,7 +4637,7 @@
                 "description": "FreeTube",
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/.config/yabai/yabai_functions.sh navigate_app \"FreeTube\"'"
+                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh navigate_app \"FreeTube\"'"
                   }
                 ],
                 "type": "basic",
@@ -4876,7 +4876,7 @@
                 "description": "Activity Monitor",
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/.config/yabai/yabai_functions.sh navigate_app \"Activity Monitor\"'"
+                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh navigate_app \"Activity Monitor\"'"
                   }
                 ],
                 "type": "basic",
@@ -5115,7 +5115,7 @@
                 "description": "System Settings",
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/.config/yabai/yabai_functions.sh navigate_app \"System Settings\"'"
+                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh navigate_app \"System Settings\"'"
                   }
                 ],
                 "type": "basic",
@@ -5354,7 +5354,7 @@
                 "description": "Calendar",
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/.config/yabai/yabai_functions.sh navigate_app \"Calendar\"'"
+                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh navigate_app \"Calendar\"'"
                   }
                 ],
                 "type": "basic",
@@ -5593,7 +5593,7 @@
                 "description": "Calculator",
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/.config/yabai/yabai_functions.sh navigate_app \"Calculator\"'"
+                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh navigate_app \"Calculator\"'"
                   }
                 ],
                 "type": "basic",
@@ -5832,7 +5832,7 @@
                 "description": "Reproductor (VLC)",
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/.config/yabai/yabai_functions.sh navigate_app \"VLC\"'"
+                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh navigate_app \"VLC\"'"
                   }
                 ],
                 "type": "basic",
@@ -6071,7 +6071,7 @@
                 "description": "qBittorrent",
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/.config/yabai/yabai_functions.sh navigate_app \"qBittorrent\"'"
+                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh navigate_app \"qBittorrent\"'"
                   }
                 ],
                 "type": "basic",
@@ -6310,7 +6310,7 @@
                 "description": "NordVPN",
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/.config/yabai/yabai_functions.sh navigate_app \"NordVPN\"'"
+                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh navigate_app \"NordVPN\"'"
                   }
                 ],
                 "type": "basic",
@@ -6549,7 +6549,7 @@
                 "description": "Telegram",
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/.config/yabai/yabai_functions.sh navigate_app \"Telegram\"'"
+                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh navigate_app \"Telegram\"'"
                   }
                 ],
                 "type": "basic",
@@ -6788,7 +6788,7 @@
                 "description": "TEST",
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/.config/yabai/yabai_functions.sh nav_multiple_windows_app'"
+                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh nav_multiple_windows_app'"
                   }
                 ],
                 "type": "basic",
@@ -8003,7 +8003,7 @@
                 "description": "Space: SWAP with LEFT",
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/.config/yabai/yabai_functions.sh space_management move left'"
+                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh space_management move left'"
                   }
                 ],
                 "type": "basic",
@@ -8242,7 +8242,7 @@
                 "description": "Space: SWAP with RIGHT",
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/.config/yabai/yabai_functions.sh space_management move right'"
+                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh space_management move right'"
                   }
                 ],
                 "type": "basic",
@@ -8481,7 +8481,7 @@
                 "description": "Space: LEFT",
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/.config/yabai/yabai_functions.sh space_management prev'"
+                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh space_management prev'"
                   }
                 ],
                 "type": "basic",
@@ -8720,7 +8720,7 @@
                 "description": "Space: RIGHT",
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/.config/yabai/yabai_functions.sh space_management next'"
+                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh space_management next'"
                   }
                 ],
                 "type": "basic",
@@ -8959,7 +8959,7 @@
                 "description": "Space: 11",
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/.config/yabai/yabai_functions.sh space_management 11'"
+                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh space_management 11'"
                   }
                 ],
                 "type": "basic",
@@ -9198,7 +9198,7 @@
                 "description": "Space: 12",
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/.config/yabai/yabai_functions.sh space_management 12'"
+                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh space_management 12'"
                   }
                 ],
                 "type": "basic",
@@ -10041,7 +10041,7 @@
               {
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/.config/yabai/yabai_functions.sh window_management 10'"
+                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh window_management 10'"
                   }
                 ],
                 "type": "basic",
@@ -10065,7 +10065,7 @@
                 "description": "Send Window to 1",
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/.config/yabai/yabai_functions.sh window_management 1'"
+                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh window_management 1'"
                   }
                 ],
                 "type": "basic",
@@ -10089,7 +10089,7 @@
                 "description": "Send Window to 2",
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/.config/yabai/yabai_functions.sh window_management 2'"
+                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh window_management 2'"
                   }
                 ],
                 "type": "basic",
@@ -10113,7 +10113,7 @@
                 "description": "Send Window to 3",
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/.config/yabai/yabai_functions.sh window_management 3'"
+                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh window_management 3'"
                   }
                 ],
                 "type": "basic",
@@ -10137,7 +10137,7 @@
                 "description": "Send Window to 4",
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/.config/yabai/yabai_functions.sh window_management 4'"
+                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh window_management 4'"
                   }
                 ],
                 "type": "basic",
@@ -10161,7 +10161,7 @@
                 "description": "Send Window to 5",
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/.config/yabai/yabai_functions.sh window_management 5'"
+                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh window_management 5'"
                   }
                 ],
                 "type": "basic",
@@ -10185,7 +10185,7 @@
                 "description": "Send Window to 6",
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/.config/yabai/yabai_functions.sh window_management 6'"
+                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh window_management 6'"
                   }
                 ],
                 "type": "basic",
@@ -10209,7 +10209,7 @@
                 "description": "Send Window to 7",
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/.config/yabai/yabai_functions.sh window_management 7'"
+                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh window_management 7'"
                   }
                 ],
                 "type": "basic",
@@ -10233,7 +10233,7 @@
                 "description": "Send Window to 8",
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/.config/yabai/yabai_functions.sh window_management 8'"
+                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh window_management 8'"
                   }
                 ],
                 "type": "basic",
@@ -10257,7 +10257,7 @@
                 "description": "Send Window to 9",
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/.config/yabai/yabai_functions.sh window_management 9'"
+                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh window_management 9'"
                   }
                 ],
                 "type": "basic",
@@ -10280,7 +10280,7 @@
               {
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/.config/yabai/yabai_functions.sh window_management 11'"
+                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh window_management 11'"
                   }
                 ],
                 "type": "basic",
@@ -10303,7 +10303,7 @@
               {
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/.config/yabai/yabai_functions.sh window_management 12'"
+                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh window_management 12'"
                   }
                 ],
                 "type": "basic",
@@ -10327,7 +10327,7 @@
                 "description": "Send Window to Left",
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/.config/yabai/yabai_functions.sh window_management send_prev_space'"
+                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh window_management send_prev_space'"
                   }
                 ],
                 "type": "basic",
@@ -10351,7 +10351,7 @@
                 "description": "Send Window to Right",
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/.config/yabai/yabai_functions.sh window_management send_next_space'"
+                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh window_management send_next_space'"
                   }
                 ],
                 "type": "basic",
@@ -10375,7 +10375,7 @@
                 "description": "Window to corner Top-Left",
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/.config/yabai/yabai_functions.sh window_management grid_or_swap top_left'"
+                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh window_management grid_or_swap top_left'"
                   }
                 ],
                 "type": "basic",
@@ -10399,7 +10399,7 @@
                 "description": "Window to corner Top-Right",
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/.config/yabai/yabai_functions.sh window_management grid_or_swap top_right'"
+                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh window_management grid_or_swap top_right'"
                   }
                 ],
                 "type": "basic",
@@ -10423,7 +10423,7 @@
                 "description": "Window to corner Bot-Left",
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/.config/yabai/yabai_functions.sh window_management grid_or_swap bot_left'"
+                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh window_management grid_or_swap bot_left'"
                   }
                 ],
                 "type": "basic",
@@ -10447,7 +10447,7 @@
                 "description": "Window to corner Bot-Right",
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/.config/yabai/yabai_functions.sh window_management grid_or_swap bot_right'"
+                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh window_management grid_or_swap bot_right'"
                   }
                 ],
                 "type": "basic",
@@ -10471,7 +10471,7 @@
                 "description": "Window to North",
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/.config/yabai/yabai_functions.sh window_management grid_or_swap north'"
+                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh window_management grid_or_swap north'"
                   }
                 ],
                 "type": "basic",
@@ -10495,7 +10495,7 @@
                 "description": "Window to South",
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/.config/yabai/yabai_functions.sh window_management grid_or_swap south'"
+                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh window_management grid_or_swap south'"
                   }
                 ],
                 "type": "basic",
@@ -10519,7 +10519,7 @@
                 "description": "Window to West",
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/.config/yabai/yabai_functions.sh window_management grid_or_swap west'"
+                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh window_management grid_or_swap west'"
                   }
                 ],
                 "type": "basic",
@@ -10543,7 +10543,7 @@
                 "description": "Window to East",
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/.config/yabai/yabai_functions.sh window_management grid_or_swap east'"
+                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh window_management grid_or_swap east'"
                   }
                 ],
                 "type": "basic",
@@ -10567,7 +10567,7 @@
                 "description": "Cycle clockwise",
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/.config/yabai/yabai_functions.sh window_management cycle_clockwise'"
+                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh window_management cycle_clockwise'"
                   }
                 ],
                 "type": "basic",
@@ -10591,7 +10591,7 @@
                 "description": "Cycle counter clockwise",
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/.config/yabai/yabai_functions.sh window_management cycle_counterclockwise'"
+                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh window_management cycle_counterclockwise'"
                   }
                 ],
                 "type": "basic",
@@ -10615,7 +10615,7 @@
                 "description": "Send Window to Left Monitor",
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/.config/yabai/yabai_functions.sh window_management send_prev_display'"
+                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh window_management send_prev_display'"
                   }
                 ],
                 "type": "basic",
@@ -10639,7 +10639,7 @@
                 "description": "Send Window to Right Monitor",
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/.config/yabai/yabai_functions.sh window_management send_next_display'"
+                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh window_management send_next_display'"
                   }
                 ],
                 "type": "basic",
@@ -10663,7 +10663,7 @@
                 "description": "Toggle Window Float",
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/.config/yabai/yabai_functions.sh window_management make_float'"
+                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh window_management make_float'"
                   }
                 ],
                 "type": "basic",
@@ -10687,7 +10687,7 @@
                 "description": "Toggle Window Sticky (show on all spaces)",
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/.config/yabai/yabai_functions.sh window_management make_sticky'"
+                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh window_management make_sticky'"
                   }
                 ],
                 "type": "basic",
@@ -10711,7 +10711,7 @@
                 "description": "Toggle Window FullScreen",
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/.config/yabai/yabai_functions.sh window_management make_fullscreen'"
+                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh window_management make_fullscreen'"
                   }
                 ],
                 "type": "basic",
@@ -10735,7 +10735,7 @@
                 "description": "Move window left",
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/.config/yabai/yabai_functions.sh window_management move left'"
+                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh window_management move left'"
                   }
                 ],
                 "type": "basic",
@@ -10759,7 +10759,7 @@
                 "description": "Move window right",
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/.config/yabai/yabai_functions.sh window_management move right'"
+                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh window_management move right'"
                   }
                 ],
                 "type": "basic",
@@ -10783,7 +10783,7 @@
                 "description": "Move window up",
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/.config/yabai/yabai_functions.sh window_management move up'"
+                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh window_management move up'"
                   }
                 ],
                 "type": "basic",
@@ -10807,7 +10807,7 @@
                 "description": "Move window down",
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/.config/yabai/yabai_functions.sh window_management move down'"
+                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh window_management move down'"
                   }
                 ],
                 "type": "basic",
@@ -10831,7 +10831,7 @@
                 "description": "Resize window wider",
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/.config/yabai/yabai_functions.sh window_management resize wider'"
+                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh window_management resize wider'"
                   }
                 ],
                 "type": "basic",
@@ -10855,7 +10855,7 @@
                 "description": "Resize window narrower",
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/.config/yabai/yabai_functions.sh window_management resize narrower'"
+                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh window_management resize narrower'"
                   }
                 ],
                 "type": "basic",
@@ -10879,7 +10879,7 @@
                 "description": "Resize window taller",
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/.config/yabai/yabai_functions.sh window_management resize taller'"
+                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh window_management resize taller'"
                   }
                 ],
                 "type": "basic",
@@ -10903,7 +10903,7 @@
                 "description": "Resize window shorter",
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/.config/yabai/yabai_functions.sh window_management resize shorter'"
+                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh window_management resize shorter'"
                   }
                 ],
                 "type": "basic",
