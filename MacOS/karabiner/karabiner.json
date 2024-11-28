@@ -272,44 +272,6 @@
                 "type": "basic"
               },
               {
-                "description": "MICE_4 -> HYPER",
-                "from": {
-                  "modifiers": {
-                    "mandatory": [
-                      "any"
-                    ]
-                  },
-                  "pointing_button": "button4"
-                },
-                "to": [
-                  {
-                    "set_variable": {
-                      "name": "hyper",
-                      "value": 1
-                    }
-                  }
-                ],
-                "to_after_key_up": [
-                  {
-                    "set_variable": {
-                      "name": "hyper",
-                      "value": 0
-                    }
-                  }
-                ],
-                "to_if_alone": [
-                  {
-                    "key_code": "spacebar",
-                    "modifiers": [
-                      "left_command",
-                      "left_control",
-                      "left_option"
-                    ]
-                  }
-                ],
-                "type": "basic"
-              },
-              {
                 "description": "Switch RCtrl to RCmd",
                 "from": {
                   "key_code": "right_control",
@@ -335,7 +297,7 @@
                 "description": "Space: 10",
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh space_management 10'"
+                    "shell_command": "/bin/bash ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh space_management 10"
                   }
                 ],
                 "type": "basic",
@@ -545,22 +507,12 @@
                   },
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_b",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
                     "name": "hyper_sublayer_spacebar",
                     "value": 0
                   },
                   {
                     "type": "variable_if",
                     "name": "hyper_sublayer_left_shift",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_right_control",
                     "value": 0
                   }
                 ]
@@ -574,7 +526,7 @@
                 "description": "Space: 1",
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh space_management 1'"
+                    "shell_command": "/bin/bash ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh space_management 1"
                   }
                 ],
                 "type": "basic",
@@ -784,22 +736,12 @@
                   },
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_b",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
                     "name": "hyper_sublayer_spacebar",
                     "value": 0
                   },
                   {
                     "type": "variable_if",
                     "name": "hyper_sublayer_left_shift",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_right_control",
                     "value": 0
                   }
                 ]
@@ -813,7 +755,7 @@
                 "description": "Space: 2",
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh space_management 2'"
+                    "shell_command": "/bin/bash ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh space_management 2"
                   }
                 ],
                 "type": "basic",
@@ -1023,22 +965,12 @@
                   },
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_b",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
                     "name": "hyper_sublayer_spacebar",
                     "value": 0
                   },
                   {
                     "type": "variable_if",
                     "name": "hyper_sublayer_left_shift",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_right_control",
                     "value": 0
                   }
                 ]
@@ -1052,7 +984,7 @@
                 "description": "Space: 3",
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh space_management 3'"
+                    "shell_command": "/bin/bash ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh space_management 3"
                   }
                 ],
                 "type": "basic",
@@ -1262,22 +1194,12 @@
                   },
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_b",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
                     "name": "hyper_sublayer_spacebar",
                     "value": 0
                   },
                   {
                     "type": "variable_if",
                     "name": "hyper_sublayer_left_shift",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_right_control",
                     "value": 0
                   }
                 ]
@@ -1291,7 +1213,7 @@
                 "description": "Space: 4",
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh space_management 4'"
+                    "shell_command": "/bin/bash ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh space_management 4"
                   }
                 ],
                 "type": "basic",
@@ -1501,22 +1423,12 @@
                   },
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_b",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
                     "name": "hyper_sublayer_spacebar",
                     "value": 0
                   },
                   {
                     "type": "variable_if",
                     "name": "hyper_sublayer_left_shift",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_right_control",
                     "value": 0
                   }
                 ]
@@ -1530,7 +1442,7 @@
                 "description": "Space: 5",
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh space_management 5'"
+                    "shell_command": "/bin/bash ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh space_management 5"
                   }
                 ],
                 "type": "basic",
@@ -1740,22 +1652,12 @@
                   },
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_b",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
                     "name": "hyper_sublayer_spacebar",
                     "value": 0
                   },
                   {
                     "type": "variable_if",
                     "name": "hyper_sublayer_left_shift",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_right_control",
                     "value": 0
                   }
                 ]
@@ -1769,7 +1671,7 @@
                 "description": "Space: 6",
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh space_management 6'"
+                    "shell_command": "/bin/bash ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh space_management 6"
                   }
                 ],
                 "type": "basic",
@@ -1979,22 +1881,12 @@
                   },
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_b",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
                     "name": "hyper_sublayer_spacebar",
                     "value": 0
                   },
                   {
                     "type": "variable_if",
                     "name": "hyper_sublayer_left_shift",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_right_control",
                     "value": 0
                   }
                 ]
@@ -2008,7 +1900,7 @@
                 "description": "Space: 7",
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh space_management 7'"
+                    "shell_command": "/bin/bash ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh space_management 7"
                   }
                 ],
                 "type": "basic",
@@ -2218,22 +2110,12 @@
                   },
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_b",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
                     "name": "hyper_sublayer_spacebar",
                     "value": 0
                   },
                   {
                     "type": "variable_if",
                     "name": "hyper_sublayer_left_shift",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_right_control",
                     "value": 0
                   }
                 ]
@@ -2247,7 +2129,7 @@
                 "description": "Space: 8",
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh space_management 8'"
+                    "shell_command": "/bin/bash ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh space_management 8"
                   }
                 ],
                 "type": "basic",
@@ -2457,22 +2339,12 @@
                   },
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_b",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
                     "name": "hyper_sublayer_spacebar",
                     "value": 0
                   },
                   {
                     "type": "variable_if",
                     "name": "hyper_sublayer_left_shift",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_right_control",
                     "value": 0
                   }
                 ]
@@ -2486,7 +2358,7 @@
                 "description": "Space: 9",
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh space_management 9'"
+                    "shell_command": "/bin/bash ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh space_management 9"
                   }
                 ],
                 "type": "basic",
@@ -2696,22 +2568,12 @@
                   },
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_b",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
                     "name": "hyper_sublayer_spacebar",
                     "value": 0
                   },
                   {
                     "type": "variable_if",
                     "name": "hyper_sublayer_left_shift",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_right_control",
                     "value": 0
                   }
                 ]
@@ -2725,7 +2587,7 @@
                 "description": "Bitwarden",
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh navigate_app \"Bitwarden\"'"
+                    "shell_command": "/bin/bash ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh \"navigate_app\" \"Bitwarden\""
                   }
                 ],
                 "type": "basic",
@@ -2935,22 +2797,12 @@
                   },
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_b",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
                     "name": "hyper_sublayer_spacebar",
                     "value": 0
                   },
                   {
                     "type": "variable_if",
                     "name": "hyper_sublayer_left_shift",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_right_control",
                     "value": 0
                   }
                 ]
@@ -2964,7 +2816,7 @@
                 "description": "Chromium",
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh navigate_app \"Chromium\"'"
+                    "shell_command": "/bin/bash ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh \"navigate_app\" \"Chromium\""
                   }
                 ],
                 "type": "basic",
@@ -3174,22 +3026,12 @@
                   },
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_b",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
                     "name": "hyper_sublayer_spacebar",
                     "value": 0
                   },
                   {
                     "type": "variable_if",
                     "name": "hyper_sublayer_left_shift",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_right_control",
                     "value": 0
                   }
                 ]
@@ -3203,7 +3045,7 @@
                 "description": "Obsidian",
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh navigate_app \"Obsidian\"'"
+                    "shell_command": "/bin/bash ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh \"navigate_app\" \"Obsidian\""
                   }
                 ],
                 "type": "basic",
@@ -3413,22 +3255,12 @@
                   },
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_b",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
                     "name": "hyper_sublayer_spacebar",
                     "value": 0
                   },
                   {
                     "type": "variable_if",
                     "name": "hyper_sublayer_left_shift",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_right_control",
                     "value": 0
                   }
                 ]
@@ -3442,7 +3274,7 @@
                 "description": "Vivaldi",
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh navigate_app \"Vivaldi\"'"
+                    "shell_command": "/bin/bash ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh \"navigate_app\" \"Vivaldi\""
                   }
                 ],
                 "type": "basic",
@@ -3652,22 +3484,12 @@
                   },
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_b",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
                     "name": "hyper_sublayer_spacebar",
                     "value": 0
                   },
                   {
                     "type": "variable_if",
                     "name": "hyper_sublayer_left_shift",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_right_control",
                     "value": 0
                   }
                 ]
@@ -3678,10 +3500,10 @@
             "description": "Hyper Key + c",
             "manipulators": [
               {
-                "description": "Cursor",
+                "description": "Visual Studio Code",
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh navigate_app \"Cursor\"'"
+                    "shell_command": "/bin/bash ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh \"navigate_app\" \"Code\""
                   }
                 ],
                 "type": "basic",
@@ -3891,22 +3713,12 @@
                   },
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_b",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
                     "name": "hyper_sublayer_spacebar",
                     "value": 0
                   },
                   {
                     "type": "variable_if",
                     "name": "hyper_sublayer_left_shift",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_right_control",
                     "value": 0
                   }
                 ]
@@ -3920,7 +3732,7 @@
                 "description": "Kitty",
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh navigate_app \"kitty\"'"
+                    "shell_command": "/bin/bash ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh \"navigate_app\" \"kitty\""
                   }
                 ],
                 "type": "basic",
@@ -4130,22 +3942,12 @@
                   },
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_b",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
                     "name": "hyper_sublayer_spacebar",
                     "value": 0
                   },
                   {
                     "type": "variable_if",
                     "name": "hyper_sublayer_left_shift",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_right_control",
                     "value": 0
                   }
                 ]
@@ -4159,7 +3961,7 @@
                 "description": "Finder",
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh navigate_app \"Finder\"'"
+                    "shell_command": "/bin/bash ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh \"navigate_app\" \"Finder\""
                   }
                 ],
                 "type": "basic",
@@ -4369,22 +4171,12 @@
                   },
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_b",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
                     "name": "hyper_sublayer_spacebar",
                     "value": 0
                   },
                   {
                     "type": "variable_if",
                     "name": "hyper_sublayer_left_shift",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_right_control",
                     "value": 0
                   }
                 ]
@@ -4398,7 +4190,7 @@
                 "description": "Spotify",
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh navigate_app \"Spotify\"'"
+                    "shell_command": "/bin/bash ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh \"navigate_app\" \"Spotify\""
                   }
                 ],
                 "type": "basic",
@@ -4608,22 +4400,12 @@
                   },
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_b",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
                     "name": "hyper_sublayer_spacebar",
                     "value": 0
                   },
                   {
                     "type": "variable_if",
                     "name": "hyper_sublayer_left_shift",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_right_control",
                     "value": 0
                   }
                 ]
@@ -4637,7 +4419,7 @@
                 "description": "FreeTube",
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh navigate_app \"FreeTube\"'"
+                    "shell_command": "/bin/bash ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh \"navigate_app\" \"FreeTube\""
                   }
                 ],
                 "type": "basic",
@@ -4847,22 +4629,12 @@
                   },
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_b",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
                     "name": "hyper_sublayer_spacebar",
                     "value": 0
                   },
                   {
                     "type": "variable_if",
                     "name": "hyper_sublayer_left_shift",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_right_control",
                     "value": 0
                   }
                 ]
@@ -4876,7 +4648,7 @@
                 "description": "Activity Monitor",
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh navigate_app \"Activity Monitor\"'"
+                    "shell_command": "/bin/bash ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh navigate_app \"Activity Monitor\""
                   }
                 ],
                 "type": "basic",
@@ -5086,22 +4858,12 @@
                   },
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_b",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
                     "name": "hyper_sublayer_spacebar",
                     "value": 0
                   },
                   {
                     "type": "variable_if",
                     "name": "hyper_sublayer_left_shift",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_right_control",
                     "value": 0
                   }
                 ]
@@ -5115,7 +4877,7 @@
                 "description": "System Settings",
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh navigate_app \"System Settings\"'"
+                    "shell_command": "/bin/bash ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh \"navigate_app\" \"System Settings\""
                   }
                 ],
                 "type": "basic",
@@ -5325,22 +5087,12 @@
                   },
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_b",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
                     "name": "hyper_sublayer_spacebar",
                     "value": 0
                   },
                   {
                     "type": "variable_if",
                     "name": "hyper_sublayer_left_shift",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_right_control",
                     "value": 0
                   }
                 ]
@@ -5354,7 +5106,7 @@
                 "description": "Calendar",
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh navigate_app \"Calendar\"'"
+                    "shell_command": "/bin/bash ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh \"navigate_app\" \"Calendar\""
                   }
                 ],
                 "type": "basic",
@@ -5564,22 +5316,12 @@
                   },
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_b",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
                     "name": "hyper_sublayer_spacebar",
                     "value": 0
                   },
                   {
                     "type": "variable_if",
                     "name": "hyper_sublayer_left_shift",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_right_control",
                     "value": 0
                   }
                 ]
@@ -5593,7 +5335,7 @@
                 "description": "Calculator",
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh navigate_app \"Calculator\"'"
+                    "shell_command": "/bin/bash ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh \"navigate_app\" \"Calculator\""
                   }
                 ],
                 "type": "basic",
@@ -5803,22 +5545,12 @@
                   },
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_b",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
                     "name": "hyper_sublayer_spacebar",
                     "value": 0
                   },
                   {
                     "type": "variable_if",
                     "name": "hyper_sublayer_left_shift",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_right_control",
                     "value": 0
                   }
                 ]
@@ -5832,7 +5564,7 @@
                 "description": "Reproductor (VLC)",
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh navigate_app \"VLC\"'"
+                    "shell_command": "/bin/bash ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh \"navigate_app\" \"VLC\""
                   }
                 ],
                 "type": "basic",
@@ -6042,22 +5774,12 @@
                   },
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_b",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
                     "name": "hyper_sublayer_spacebar",
                     "value": 0
                   },
                   {
                     "type": "variable_if",
                     "name": "hyper_sublayer_left_shift",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_right_control",
                     "value": 0
                   }
                 ]
@@ -6071,7 +5793,7 @@
                 "description": "qBittorrent",
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh navigate_app \"qBittorrent\"'"
+                    "shell_command": "/bin/bash ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh \"navigate_app\" \"qBittorrent\""
                   }
                 ],
                 "type": "basic",
@@ -6281,22 +6003,12 @@
                   },
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_b",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
                     "name": "hyper_sublayer_spacebar",
                     "value": 0
                   },
                   {
                     "type": "variable_if",
                     "name": "hyper_sublayer_left_shift",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_right_control",
                     "value": 0
                   }
                 ]
@@ -6310,7 +6022,7 @@
                 "description": "NordVPN",
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh navigate_app \"NordVPN\"'"
+                    "shell_command": "/bin/bash ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh \"navigate_app\" \"NordVPN\""
                   }
                 ],
                 "type": "basic",
@@ -6520,22 +6232,12 @@
                   },
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_b",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
                     "name": "hyper_sublayer_spacebar",
                     "value": 0
                   },
                   {
                     "type": "variable_if",
                     "name": "hyper_sublayer_left_shift",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_right_control",
                     "value": 0
                   }
                 ]
@@ -6549,7 +6251,7 @@
                 "description": "Telegram",
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh navigate_app \"Telegram\"'"
+                    "shell_command": "/bin/bash ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh \"navigate_app\" \"Telegram\""
                   }
                 ],
                 "type": "basic",
@@ -6759,22 +6461,12 @@
                   },
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_b",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
                     "name": "hyper_sublayer_spacebar",
                     "value": 0
                   },
                   {
                     "type": "variable_if",
                     "name": "hyper_sublayer_left_shift",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_right_control",
                     "value": 0
                   }
                 ]
@@ -6788,7 +6480,7 @@
                 "description": "TEST",
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh nav_multiple_windows_app'"
+                    "shell_command": "/bin/bash ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh nav_multiple_windows_app"
                   }
                 ],
                 "type": "basic",
@@ -6998,22 +6690,12 @@
                   },
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_b",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
                     "name": "hyper_sublayer_spacebar",
                     "value": 0
                   },
                   {
                     "type": "variable_if",
                     "name": "hyper_sublayer_left_shift",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_right_control",
                     "value": 0
                   }
                 ]
@@ -7242,22 +6924,12 @@
                   },
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_b",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
                     "name": "hyper_sublayer_spacebar",
                     "value": 0
                   },
                   {
                     "type": "variable_if",
                     "name": "hyper_sublayer_left_shift",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_right_control",
                     "value": 0
                   }
                 ]
@@ -7486,22 +7158,12 @@
                   },
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_b",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
                     "name": "hyper_sublayer_spacebar",
                     "value": 0
                   },
                   {
                     "type": "variable_if",
                     "name": "hyper_sublayer_left_shift",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_right_control",
                     "value": 0
                   }
                 ]
@@ -7730,22 +7392,12 @@
                   },
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_b",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
                     "name": "hyper_sublayer_spacebar",
                     "value": 0
                   },
                   {
                     "type": "variable_if",
                     "name": "hyper_sublayer_left_shift",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_right_control",
                     "value": 0
                   }
                 ]
@@ -7974,22 +7626,12 @@
                   },
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_b",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
                     "name": "hyper_sublayer_spacebar",
                     "value": 0
                   },
                   {
                     "type": "variable_if",
                     "name": "hyper_sublayer_left_shift",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_right_control",
                     "value": 0
                   }
                 ]
@@ -8003,7 +7645,7 @@
                 "description": "Space: SWAP with LEFT",
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh space_management move left'"
+                    "shell_command": "/bin/bash ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh space_management move left"
                   }
                 ],
                 "type": "basic",
@@ -8213,22 +7855,12 @@
                   },
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_b",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
                     "name": "hyper_sublayer_spacebar",
                     "value": 0
                   },
                   {
                     "type": "variable_if",
                     "name": "hyper_sublayer_left_shift",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_right_control",
                     "value": 0
                   }
                 ]
@@ -8242,7 +7874,7 @@
                 "description": "Space: SWAP with RIGHT",
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh space_management move right'"
+                    "shell_command": "/bin/bash ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh space_management move right"
                   }
                 ],
                 "type": "basic",
@@ -8452,22 +8084,12 @@
                   },
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_b",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
                     "name": "hyper_sublayer_spacebar",
                     "value": 0
                   },
                   {
                     "type": "variable_if",
                     "name": "hyper_sublayer_left_shift",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_right_control",
                     "value": 0
                   }
                 ]
@@ -8481,7 +8103,7 @@
                 "description": "Space: LEFT",
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh space_management prev'"
+                    "shell_command": "/bin/bash ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh space_management prev"
                   }
                 ],
                 "type": "basic",
@@ -8691,22 +8313,12 @@
                   },
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_b",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
                     "name": "hyper_sublayer_spacebar",
                     "value": 0
                   },
                   {
                     "type": "variable_if",
                     "name": "hyper_sublayer_left_shift",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_right_control",
                     "value": 0
                   }
                 ]
@@ -8720,7 +8332,7 @@
                 "description": "Space: RIGHT",
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh space_management next'"
+                    "shell_command": "/bin/bash ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh space_management next"
                   }
                 ],
                 "type": "basic",
@@ -8930,22 +8542,12 @@
                   },
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_b",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
                     "name": "hyper_sublayer_spacebar",
                     "value": 0
                   },
                   {
                     "type": "variable_if",
                     "name": "hyper_sublayer_left_shift",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_right_control",
                     "value": 0
                   }
                 ]
@@ -8959,7 +8561,7 @@
                 "description": "Space: 11",
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh space_management 11'"
+                    "shell_command": "/bin/bash ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh space_management 11"
                   }
                 ],
                 "type": "basic",
@@ -9169,22 +8771,12 @@
                   },
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_b",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
                     "name": "hyper_sublayer_spacebar",
                     "value": 0
                   },
                   {
                     "type": "variable_if",
                     "name": "hyper_sublayer_left_shift",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_right_control",
                     "value": 0
                   }
                 ]
@@ -9198,7 +8790,7 @@
                 "description": "Space: 12",
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh space_management 12'"
+                    "shell_command": "/bin/bash ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh space_management 12"
                   }
                 ],
                 "type": "basic",
@@ -9408,11 +9000,6 @@
                   },
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_b",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
                     "name": "hyper_sublayer_spacebar",
                     "value": 0
                   },
@@ -9420,376 +9007,6 @@
                     "type": "variable_if",
                     "name": "hyper_sublayer_left_shift",
                     "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_right_control",
-                    "value": 0
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "description": "Hyper Key sublayer \"b\"",
-            "manipulators": [
-              {
-                "description": "Toggle Hyper sublayer b",
-                "type": "basic",
-                "from": {
-                  "key_code": "b",
-                  "modifiers": {
-                    "optional": [
-                      "any"
-                    ]
-                  }
-                },
-                "to_after_key_up": [
-                  {
-                    "set_variable": {
-                      "name": "hyper_sublayer_b",
-                      "value": 0
-                    }
-                  }
-                ],
-                "to": [
-                  {
-                    "set_variable": {
-                      "name": "hyper_sublayer_b",
-                      "value": 1
-                    }
-                  }
-                ],
-                "conditions": [
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_0",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_1",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_2",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_3",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_4",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_5",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_6",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_7",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_8",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_9",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_p",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_g",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_d",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_v",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_c",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_t",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_e",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_y",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_f",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_m",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_s",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_x",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_u",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_r",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_o",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_n",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_l",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_i",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_tab",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_escape",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_up_arrow",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_down_arrow",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_left_arrow",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_right_arrow",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_q",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_w",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_hyphen",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_equal_sign",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_spacebar",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_left_shift",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_right_control",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper",
-                    "value": 1
-                  }
-                ]
-              },
-              {
-                "to": [
-                  {
-                    "shell_command": "open https://twitter.com"
-                  }
-                ],
-                "description": "Open https://twitter.com",
-                "type": "basic",
-                "from": {
-                  "key_code": "t",
-                  "modifiers": {
-                    "optional": [
-                      "any"
-                    ]
-                  }
-                },
-                "conditions": [
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_b",
-                    "value": 1
-                  }
-                ]
-              },
-              {
-                "to": [
-                  {
-                    "shell_command": "open https://qrtr.ly/plan"
-                  }
-                ],
-                "description": "Open https://qrtr.ly/plan",
-                "type": "basic",
-                "from": {
-                  "key_code": "p",
-                  "modifiers": {
-                    "optional": [
-                      "any"
-                    ]
-                  }
-                },
-                "conditions": [
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_b",
-                    "value": 1
-                  }
-                ]
-              },
-              {
-                "to": [
-                  {
-                    "shell_command": "open https://news.ycombinator.com"
-                  }
-                ],
-                "description": "Open https://news.ycombinator.com",
-                "type": "basic",
-                "from": {
-                  "key_code": "y",
-                  "modifiers": {
-                    "optional": [
-                      "any"
-                    ]
-                  }
-                },
-                "conditions": [
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_b",
-                    "value": 1
-                  }
-                ]
-              },
-              {
-                "to": [
-                  {
-                    "shell_command": "open https://facebook.com"
-                  }
-                ],
-                "description": "Open https://facebook.com",
-                "type": "basic",
-                "from": {
-                  "key_code": "f",
-                  "modifiers": {
-                    "optional": [
-                      "any"
-                    ]
-                  }
-                },
-                "conditions": [
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_b",
-                    "value": 1
-                  }
-                ]
-              },
-              {
-                "to": [
-                  {
-                    "shell_command": "open https://reddit.com"
-                  }
-                ],
-                "description": "Open https://reddit.com",
-                "type": "basic",
-                "from": {
-                  "key_code": "r",
-                  "modifiers": {
-                    "optional": [
-                      "any"
-                    ]
-                  }
-                },
-                "conditions": [
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_b",
-                    "value": 1
                   }
                 ]
               }
@@ -10018,17 +9235,7 @@
                   },
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_b",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
                     "name": "hyper_sublayer_left_shift",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_right_control",
                     "value": 0
                   },
                   {
@@ -10041,7 +9248,7 @@
               {
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh window_management 10'"
+                    "shell_command": "/bin/bash ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh window_management 10"
                   }
                 ],
                 "type": "basic",
@@ -10065,7 +9272,7 @@
                 "description": "Send Window to 1",
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh window_management 1'"
+                    "shell_command": "/bin/bash ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh window_management 1"
                   }
                 ],
                 "type": "basic",
@@ -10089,7 +9296,7 @@
                 "description": "Send Window to 2",
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh window_management 2'"
+                    "shell_command": "/bin/bash ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh window_management 2"
                   }
                 ],
                 "type": "basic",
@@ -10113,7 +9320,7 @@
                 "description": "Send Window to 3",
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh window_management 3'"
+                    "shell_command": "/bin/bash ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh window_management 3"
                   }
                 ],
                 "type": "basic",
@@ -10137,7 +9344,7 @@
                 "description": "Send Window to 4",
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh window_management 4'"
+                    "shell_command": "/bin/bash ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh window_management 4"
                   }
                 ],
                 "type": "basic",
@@ -10161,7 +9368,7 @@
                 "description": "Send Window to 5",
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh window_management 5'"
+                    "shell_command": "/bin/bash ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh window_management 5"
                   }
                 ],
                 "type": "basic",
@@ -10185,7 +9392,7 @@
                 "description": "Send Window to 6",
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh window_management 6'"
+                    "shell_command": "/bin/bash ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh window_management 6"
                   }
                 ],
                 "type": "basic",
@@ -10209,7 +9416,7 @@
                 "description": "Send Window to 7",
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh window_management 7'"
+                    "shell_command": "/bin/bash ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh window_management 7"
                   }
                 ],
                 "type": "basic",
@@ -10233,7 +9440,7 @@
                 "description": "Send Window to 8",
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh window_management 8'"
+                    "shell_command": "/bin/bash ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh window_management 8"
                   }
                 ],
                 "type": "basic",
@@ -10257,7 +9464,7 @@
                 "description": "Send Window to 9",
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh window_management 9'"
+                    "shell_command": "/bin/bash ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh window_management 9"
                   }
                 ],
                 "type": "basic",
@@ -10280,7 +9487,7 @@
               {
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh window_management 11'"
+                    "shell_command": "/bin/bash ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh window_management 11"
                   }
                 ],
                 "type": "basic",
@@ -10303,7 +9510,7 @@
               {
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh window_management 12'"
+                    "shell_command": "/bin/bash ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh window_management 12"
                   }
                 ],
                 "type": "basic",
@@ -10327,7 +9534,7 @@
                 "description": "Send Window to Left",
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh window_management send_prev_space'"
+                    "shell_command": "/bin/bash ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh window_management send_prev_space"
                   }
                 ],
                 "type": "basic",
@@ -10351,7 +9558,7 @@
                 "description": "Send Window to Right",
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh window_management send_next_space'"
+                    "shell_command": "/bin/bash ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh window_management send_next_space"
                   }
                 ],
                 "type": "basic",
@@ -10375,7 +9582,7 @@
                 "description": "Window to corner Top-Left",
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh window_management grid_or_swap top_left'"
+                    "shell_command": "/bin/bash ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh window_management grid_or_swap top_left"
                   }
                 ],
                 "type": "basic",
@@ -10399,7 +9606,7 @@
                 "description": "Window to corner Top-Right",
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh window_management grid_or_swap top_right'"
+                    "shell_command": "/bin/bash ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh window_management grid_or_swap top_right"
                   }
                 ],
                 "type": "basic",
@@ -10423,7 +9630,7 @@
                 "description": "Window to corner Bot-Left",
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh window_management grid_or_swap bot_left'"
+                    "shell_command": "/bin/bash ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh window_management grid_or_swap bot_left"
                   }
                 ],
                 "type": "basic",
@@ -10447,7 +9654,7 @@
                 "description": "Window to corner Bot-Right",
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh window_management grid_or_swap bot_right'"
+                    "shell_command": "/bin/bash ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh window_management grid_or_swap bot_right"
                   }
                 ],
                 "type": "basic",
@@ -10471,7 +9678,7 @@
                 "description": "Window to North",
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh window_management grid_or_swap north'"
+                    "shell_command": "/bin/bash ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh window_management grid_or_swap north"
                   }
                 ],
                 "type": "basic",
@@ -10495,7 +9702,7 @@
                 "description": "Window to South",
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh window_management grid_or_swap south'"
+                    "shell_command": "/bin/bash ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh window_management grid_or_swap south"
                   }
                 ],
                 "type": "basic",
@@ -10519,7 +9726,7 @@
                 "description": "Window to West",
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh window_management grid_or_swap west'"
+                    "shell_command": "/bin/bash ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh window_management grid_or_swap west"
                   }
                 ],
                 "type": "basic",
@@ -10543,7 +9750,7 @@
                 "description": "Window to East",
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh window_management grid_or_swap east'"
+                    "shell_command": "/bin/bash ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh window_management grid_or_swap east"
                   }
                 ],
                 "type": "basic",
@@ -10567,7 +9774,7 @@
                 "description": "Cycle clockwise",
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh window_management cycle_clockwise'"
+                    "shell_command": "/bin/bash ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh window_management cycle_clockwise"
                   }
                 ],
                 "type": "basic",
@@ -10591,7 +9798,7 @@
                 "description": "Cycle counter clockwise",
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh window_management cycle_counterclockwise'"
+                    "shell_command": "/bin/bash ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh window_management cycle_counterclockwise"
                   }
                 ],
                 "type": "basic",
@@ -10615,7 +9822,7 @@
                 "description": "Send Window to Left Monitor",
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh window_management send_prev_display'"
+                    "shell_command": "/bin/bash ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh window_management send_prev_display"
                   }
                 ],
                 "type": "basic",
@@ -10639,7 +9846,7 @@
                 "description": "Send Window to Right Monitor",
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh window_management send_next_display'"
+                    "shell_command": "/bin/bash ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh window_management send_next_display"
                   }
                 ],
                 "type": "basic",
@@ -10663,7 +9870,7 @@
                 "description": "Toggle Window Float",
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh window_management make_float'"
+                    "shell_command": "/bin/bash ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh window_management make_float"
                   }
                 ],
                 "type": "basic",
@@ -10687,7 +9894,7 @@
                 "description": "Toggle Window Sticky (show on all spaces)",
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh window_management make_sticky'"
+                    "shell_command": "/bin/bash ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh window_management make_sticky"
                   }
                 ],
                 "type": "basic",
@@ -10711,7 +9918,7 @@
                 "description": "Toggle Window FullScreen",
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh window_management make_fullscreen'"
+                    "shell_command": "/bin/bash ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh window_management make_fullscreen"
                   }
                 ],
                 "type": "basic",
@@ -10735,7 +9942,7 @@
                 "description": "Move window left",
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh window_management move left'"
+                    "shell_command": "/bin/bash ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh window_management move left"
                   }
                 ],
                 "type": "basic",
@@ -10759,7 +9966,7 @@
                 "description": "Move window right",
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh window_management move right'"
+                    "shell_command": "/bin/bash ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh window_management move right"
                   }
                 ],
                 "type": "basic",
@@ -10783,7 +9990,7 @@
                 "description": "Move window up",
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh window_management move up'"
+                    "shell_command": "/bin/bash ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh window_management move up"
                   }
                 ],
                 "type": "basic",
@@ -10807,7 +10014,7 @@
                 "description": "Move window down",
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh window_management move down'"
+                    "shell_command": "/bin/bash ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh window_management move down"
                   }
                 ],
                 "type": "basic",
@@ -10831,7 +10038,7 @@
                 "description": "Resize window wider",
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh window_management resize wider'"
+                    "shell_command": "/bin/bash ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh window_management resize wider"
                   }
                 ],
                 "type": "basic",
@@ -10855,7 +10062,7 @@
                 "description": "Resize window narrower",
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh window_management resize narrower'"
+                    "shell_command": "/bin/bash ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh window_management resize narrower"
                   }
                 ],
                 "type": "basic",
@@ -10879,7 +10086,7 @@
                 "description": "Resize window taller",
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh window_management resize taller'"
+                    "shell_command": "/bin/bash ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh window_management resize taller"
                   }
                 ],
                 "type": "basic",
@@ -10903,7 +10110,7 @@
                 "description": "Resize window shorter",
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh window_management resize shorter'"
+                    "shell_command": "/bin/bash ~/syncthing/git_repos/myProjects/KeyboardProjects/spinachShortcuts/MacOS/yabai/yabai_functions.sh window_management resize shorter"
                   }
                 ],
                 "type": "basic",
@@ -10927,7 +10134,7 @@
                 "description": "Restart Yabai & Skhdrc",
                 "to": [
                   {
-                    "shell_command": "/bin/zsh -c 'source ~/.zshrc; $YABAI_FUNCTIONS_PATH reset_config'"
+                    "shell_command": "/bin/bash -c 'source ~/.zshrc; $YABAI_FUNCTIONS_PATH reset_config"
                   }
                 ],
                 "type": "basic",
@@ -11172,17 +10379,7 @@
                   },
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_b",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
                     "name": "hyper_sublayer_spacebar",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_right_control",
                     "value": 0
                   },
                   {
@@ -11603,468 +10800,6 @@
                   {
                     "type": "variable_if",
                     "name": "hyper_sublayer_left_shift",
-                    "value": 1
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "description": "Hyper Key sublayer \"right_control\"",
-            "manipulators": [
-              {
-                "description": "Toggle Hyper sublayer right_control",
-                "type": "basic",
-                "from": {
-                  "key_code": "right_control",
-                  "modifiers": {
-                    "optional": [
-                      "any"
-                    ]
-                  }
-                },
-                "to_after_key_up": [
-                  {
-                    "set_variable": {
-                      "name": "hyper_sublayer_right_control",
-                      "value": 0
-                    }
-                  }
-                ],
-                "to": [
-                  {
-                    "set_variable": {
-                      "name": "hyper_sublayer_right_control",
-                      "value": 1
-                    }
-                  }
-                ],
-                "conditions": [
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_0",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_1",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_2",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_3",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_4",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_5",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_6",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_7",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_8",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_9",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_p",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_g",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_d",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_v",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_c",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_t",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_e",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_y",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_f",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_m",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_s",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_x",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_u",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_r",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_o",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_n",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_l",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_i",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_tab",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_escape",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_up_arrow",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_down_arrow",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_left_arrow",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_right_arrow",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_q",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_w",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_hyphen",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_equal_sign",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_b",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_spacebar",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_left_shift",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper",
-                    "value": 1
-                  }
-                ]
-              },
-              {
-                "to": [
-                  {
-                    "key_code": "left_arrow"
-                  }
-                ],
-                "type": "basic",
-                "from": {
-                  "key_code": "h",
-                  "modifiers": {
-                    "optional": [
-                      "any"
-                    ]
-                  }
-                },
-                "conditions": [
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_right_control",
-                    "value": 1
-                  }
-                ]
-              },
-              {
-                "to": [
-                  {
-                    "key_code": "down_arrow"
-                  }
-                ],
-                "type": "basic",
-                "from": {
-                  "key_code": "j",
-                  "modifiers": {
-                    "optional": [
-                      "any"
-                    ]
-                  }
-                },
-                "conditions": [
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_right_control",
-                    "value": 1
-                  }
-                ]
-              },
-              {
-                "to": [
-                  {
-                    "key_code": "up_arrow"
-                  }
-                ],
-                "type": "basic",
-                "from": {
-                  "key_code": "k",
-                  "modifiers": {
-                    "optional": [
-                      "any"
-                    ]
-                  }
-                },
-                "conditions": [
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_right_control",
-                    "value": 1
-                  }
-                ]
-              },
-              {
-                "to": [
-                  {
-                    "key_code": "right_arrow"
-                  }
-                ],
-                "type": "basic",
-                "from": {
-                  "key_code": "l",
-                  "modifiers": {
-                    "optional": [
-                      "any"
-                    ]
-                  }
-                },
-                "conditions": [
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_right_control",
-                    "value": 1
-                  }
-                ]
-              },
-              {
-                "to": [
-                  {
-                    "key_code": "f",
-                    "modifiers": [
-                      "right_control"
-                    ]
-                  }
-                ],
-                "type": "basic",
-                "from": {
-                  "key_code": "m",
-                  "modifiers": {
-                    "optional": [
-                      "any"
-                    ]
-                  }
-                },
-                "conditions": [
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_right_control",
-                    "value": 1
-                  }
-                ]
-              },
-              {
-                "to": [
-                  {
-                    "key_code": "j",
-                    "modifiers": [
-                      "right_control"
-                    ]
-                  }
-                ],
-                "type": "basic",
-                "from": {
-                  "key_code": "s",
-                  "modifiers": {
-                    "optional": [
-                      "any"
-                    ]
-                  }
-                },
-                "conditions": [
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_right_control",
-                    "value": 1
-                  }
-                ]
-              },
-              {
-                "to": [
-                  {
-                    "key_code": "d",
-                    "modifiers": [
-                      "right_shift",
-                      "left_command"
-                    ]
-                  }
-                ],
-                "type": "basic",
-                "from": {
-                  "key_code": "d",
-                  "modifiers": {
-                    "optional": [
-                      "any"
-                    ]
-                  }
-                },
-                "conditions": [
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_right_control",
-                    "value": 1
-                  }
-                ]
-              },
-              {
-                "to": [
-                  {
-                    "key_code": "page_down"
-                  }
-                ],
-                "type": "basic",
-                "from": {
-                  "key_code": "u",
-                  "modifiers": {
-                    "optional": [
-                      "any"
-                    ]
-                  }
-                },
-                "conditions": [
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_right_control",
-                    "value": 1
-                  }
-                ]
-              },
-              {
-                "to": [
-                  {
-                    "key_code": "page_up"
-                  }
-                ],
-                "type": "basic",
-                "from": {
-                  "key_code": "i",
-                  "modifiers": {
-                    "optional": [
-                      "any"
-                    ]
-                  }
-                },
-                "conditions": [
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_right_control",
                     "value": 1
                   }
                 ]
