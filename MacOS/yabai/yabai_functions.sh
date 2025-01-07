@@ -1,4 +1,5 @@
 #!/bin/bash
+export PATH="/opt/homebrew/bin:$PATH"
 
 source $VARIABLES_PATH
 
@@ -8,7 +9,7 @@ LOGGING_ENABLED=false
 # Function for logging messages
 log_message() {
   local message="$1"
-  if [ "$LOGGING_ENABLED" = true ]; then
+  if [ "$LOGGING_ENABLED" == true ]; then
     echo "$message" >> ~/yabai_result
   fi
 }
@@ -26,12 +27,25 @@ set_spaces_singleMonitor() {
   # set the window rules
   yabai -m rule --add app="^Obsidian$" space=1
   yabai -m rule --add app="^Vivaldi$" space=2
+  yabai -m rule --add app="^Code$" space=3
+}
+
+make_float_and_sticky() {
+  local app_name="$1"
+  local app_id="$2"
+
+  if [ $(check_attribute "$app_name" "is-floating") == "false" ]; then
+    yabai -m window $app_id --toggle float
+  fi 
+  if [ $(check_attribute "$app_name" "is-sticky") == "false" ]; then
+    yabai -m window $app_id --toggle sticky
+  fi 
+
+  log_message "end of make_float"
 }
 
 set_windows_singleMonitors() {
-  echo "set_windows"
-  # set Kitty Grid
-  yabai -m window $(yabai -m query --windows | jq ".[] | select(.app == \"kitty\").id") --grid 10:10:5:1:5:8
+  set_floating_windows "kitty" "20:20:9:3:6:15"
 }
 
 set_spaces_externalMonitors() {
@@ -53,31 +67,27 @@ set_spaces_externalMonitors() {
   done
 
   # set the window rules
-  # yabai -m rule --add app="^Obsidian$" display=2 # ????????? TODO
   yabai -m rule --add app="^Vivaldi$" space=1
+  yabai -m rule --add app="^Code$" space=2
+  yabai -m rule --add app="^Obsidian$" display=9
 }
 
-make_window_sticky_and_floating() {
+set_floating_windows() {
   # Make the window sticky
-  # and config the grid according $2
+  # and config the grid
   local app_name="$1"
   local grid="$2"
-  log_message "make_window_sticky_and_floating"
+  local app_id=$(get_id "$app_name")
+
+  log_message "set_floating_windows"
   log_message "app_name: $app_name"
   log_message "grid: $grid"
-  # if app is not floating, make it.
-  if [[ "$(yabai -m query --windows | jq --arg app_name "$app_name" '.[] | select(.app == $app_name) | .["is-floating"] // false')" == "false" ]]; then
-    log_message "Making $app_name Float"
-    yabai -m window $(yabai -m query --windows | jq ".[] | select(.app == $app_name).id") --toggle float
-    yabai -m window $(yabai -m query --windows | jq ".[] | select(.app == $app_name).id") --grid 10:10:5:1:5:8
-  fi
-  # if app is not sticky, make it.
-  if [[ "$(yabai -m query --windows | jq --arg app_name "$app_name" '.[] | select(.app == $app_name) | .["is-sticky"] // false')" == "false" ]]; then
-    log_message "Making $app_name Sticky"
-    yabai -m window $(yabai -m query --windows | jq ".[] | select(.app == $app_name).id") --toggle sticky
-    yabai -m window $(yabai -m query --windows | jq ".[] | select(.app == $app_name).id") --grid 10:10:5:1:5:8
-  fi
 
+  # make the app float and sticky
+  make_float_and_sticky "$app_name" "$app_id"
+
+  # set grid
+  yabai -m window $app_id --grid "$grid"
 }
 
 make_window_float() {
@@ -90,22 +100,18 @@ set_window_rules_singleMonitor() {
   # asdf
   log_message "setting window_rules_singleMonitor"
   # Kitty setup
-  make_window_sticky_and_floating "kitty" "10:10:1:0:9:4"
+  set_floating_windows "kitty" "10:10:1:0:9:4"
 }
 
 set_window_rules_externalMonitors() {
   # asdf
   log_message "setting window_rules_externalMonitors"
   # Kitty setup
-  make_window_sticky_and_floating "kitty" "20:20:10:1:10:16"
+  set_floating_windows "kitty" "20:20:10:1:10:16"
 }
 
 set_windows_externalMonitors() {
-  echo "set_windows"
-  # set Kitty Grid
-  yabai -m window $(yabai -m query --windows | jq ".[] | select(.app == \"kitty\").id") --grid 20:20:10:1:10:16
-  # set qBittorrent Grid
-  # yabai -m window $(yabai -m query --windows | jq ".[] | select(.app == \"qBittorrent\").id") --grid 10:10:5:0:5:5
+  set_floating_windows "kitty" "20:20:9:3:6:15"
 }
 
 reset_config() {
@@ -162,6 +168,20 @@ get_focused_app() {
   yabai -m query --windows --window | jq -r '.app'
 }
 
+get_id() {
+  # returns id of the given app_name
+  local app_name="$1"
+  echo "$(yabai -m query --windows | jq ".[] | select(.app == \"$app_name\").id")"
+}
+
+check_attribute() {
+  local app_name="$1"
+  local attribute="$2"
+
+  local attribute_is=$(yabai -m query --windows | jq ".[] | select(.app == \"$app_name\") | .[\"$attribute\"]")
+  echo "$attribute_is"
+}
+
 get_full_query_by_app() {
   # Fetches all windows belonging to the specified app or the currently focused app if no parameter is provided
   local app_name="$1"
@@ -202,7 +222,8 @@ get_array_windows_same_app() {
 nav_single_float_window_app() {
   local app_name="$1"
   local app_id="$2"
-  
+  log_message "nav_single_float_window_app"
+
   local is_minimized=$(yabai -m query --windows | jq --arg app_name "$app_name" --arg key "is-minimized" '.[] | select(.app == $app_name) | .[$key]')
   log_message "is_minimized: $is_minimized"
   if [ "$is_minimized" == "false" ]; then
@@ -225,16 +246,22 @@ nav_single_tiling_window_app() {
 nav_single_window_app() {
   local app_name="$1"
   local app_id="$2"
+  log_message "nav_single_window_app"
 
   # Check if the window is floating
   local is_floating=$(check_if_window_floating "$app_id")
   log_message "is_floating: $is_floating"
 
+  log_message "Before nav_single_window_app checks is_floating variable: $is_floating"
+
   if [ "$is_floating" == "true" ]; then
+      log_message "Floating window detected for app_id: $app_id"
       nav_single_float_window_app "$app_name" "$app_id"
   else
+      log_message "Tiling window detected for app_id: $app_id"
       nav_single_tiling_window_app "$app_name" "$app_id"
   fi
+  log_message "Finished navigating single window"
 }
 
 nav_multiple_windows_app() {
@@ -275,6 +302,8 @@ navigate_app() {
   # If the app has multiple windows, navigate through them
   # If the app has a single window, focus it, if it's already focused, minimize it instead.
   local app_name="$1"
+
+  # export PATH="/opt/homebrew/bin:$PATH"
 
   app_id=$(yabai -m query --windows | jq -r ".[] | select(.app == \"$app_name\").id")
   log_message "App: $app_name ids: $app_id"
@@ -516,7 +545,7 @@ window_management() {
 }
 
 # First message to clean the file
-if [ "$LOGGING_ENABLED" = true ]; then
+if [ "$LOGGING_ENABLED" == "true" ]; then
   echo "===================== $1 $2" > ~/yabai_result
 fi
 
